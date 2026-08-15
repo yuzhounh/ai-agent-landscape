@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Changed
+
+- Expanded the README from a representative shortlist into a broader ecosystem directory covering additional IDE, CLI, cloud, repository-native, work, personal, computer-use, framework, plan, router, and model products.
+- Added product-family mapping to clarify how models, harnesses, surfaces, cloud execution, and plans relate across major vendors.
+- Corrected DeepSeek Harness to reflect its official developer-preview release and open-source repository.
+- Added clearer status, evidence, compatibility, security, and maintenance guidance.
+
 ## [0.1.0] - 2026-08-15
 
 ### Added
