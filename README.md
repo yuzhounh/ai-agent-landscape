@@ -20,7 +20,6 @@ AI Agent 已经不再只是聊天框或代码补全插件。一个完整的 Agen
 - [重点产品家族](#重点产品家族)
 - [AI IDE / Agent IDE](#ai-ide--agent-ide)
 - [CLI / Terminal Coding Agent](#cli--terminal-coding-agent)
-- [DeepSeek Harness](#deepseek-harness)
 - [Cloud / Background Coding Agent](#cloud--background-coding-agent)
 - [GitHub / Repository-native Agent](#github--repository-native-agent)
 - [通用 Work / Desktop Agent](#通用-work--desktop-agent)
@@ -118,12 +117,12 @@ flowchart TB
 | AWS               | Bedrock                           | Kiro IDE、Kiro CLI                            | —                                            | Kiro Web / autonomous agent        |
 | xAI               | Grok、xAI API                     | Grok Build                                    | Grok                                         | Build 无头 / 自动化形态            |
 | Meta              | Llama、Muse                       | Muse Code                                     | Meta AI                                      | 开源权重与开发者生态               |
-| Qoder             | 可接入多模型                      | Qoder IDE、Qoder CLI                          | QoderWork、QoderWake                         | Cloud Agents、Mobile               |
+| 阿里 / Qoder      | 可接入多模型                      | Qoder IDE、Qoder CLI                          | QoderWork、QoderWake                         | Cloud Agents、Mobile               |
 | 字节跳动          | 豆包 / Seed、火山方舟             | TRAE IDE、SOLO                                | TRAE Work                                    | Work Web / Mobile、云端任务        |
 | 腾讯              | 混元、腾讯云模型服务              | CodeBuddy IDE、CodeBuddy Code                 | WorkBuddy、QClaw、Marvis                     | Token Plan、TokenHub               |
 | 智谱              | GLM、BigModel API、Coding Plan    | ZCode                                         | AutoGLM、AutoClaw                            | AutoGLM-OpenClaw 云机              |
 | 月之暗面          | Kimi、Moonshot API、Kimi Code API | Kimi Code CLI、VS Code                        | Kimi、Kimi Work、WebBridge                   | 在线 Agent 与会员额度              |
-| 阿里 / Qwen 生态  | Qwen、百炼 Model Studio           | Qwen Code、Qoder、通义灵码                    | QwenPaw、Qwen Chat                           | 百炼 Coding Plan、ModelScope       |
+| 阿里 / Qwen       | Qwen、百炼 Model Studio           | Qwen Code、Lingma                             | QwenPaw、Qwen Chat                           | 百炼 Coding Plan、ModelScope       |
 | DeepSeek          | DeepSeek 模型与 API               | DeepSeek Harness                              | DeepSeek Chat                                | Harness 当前为开发者预览           |
 | MiniMax           | MiniMax 模型与 API                | MiniMax Code                                  | MiniMax 产品入口                             | Token Plan                         |
 
@@ -138,16 +137,16 @@ flowchart TB
 | [Cursor](https://www.cursor.com/)                          | Anysphere / 美国 | AI 原生编辑器、代码库理解、Agent                   | Background Agents、CLI、Web/Mobile |
 | [Windsurf](https://windsurf.com/)                          | Windsurf / 美国  | Agentic IDE、编辑器内多步开发                      | 插件、企业能力                     |
 | [Kiro](https://kiro.dev/)                                  | AWS / 美国       | 规格驱动开发、Agent hooks、steering                | CLI、Web、autonomous agent         |
-| [Google Antigravity](https://antigravity.google/)          | Google / 美国    | Agent-first 开发平台、多 Agent、浏览器与终端       | CLI、API Agent                     |
+| [Antigravity](https://antigravity.google/)                 | Google / 美国    | Agent-first 开发平台、多 Agent、浏览器与终端       | CLI、API Agent                     |
 | [GitHub Copilot](https://github.com/features/copilot)      | GitHub / 美国    | IDE Agent、Plan、补全、多模型与 GitHub 上下文      | CLI、Coding Agent、Code Review     |
 | [Zed Agent Panel](https://zed.dev/docs/ai/agents)          | Zed / 美国       | 原生 Agent、ACP 外部 Agent、终端 Agent 三种路径    | 可接 Claude Code、Codex、OpenCode  |
 | [JetBrains Junie](https://www.jetbrains.com/junie/)        | JetBrains        | IDE 内规划、编辑、运行测试与终端命令               | CLI / terminal                    |
-| [Qoder](https://qoder.com/)                                | Qoder / 中国     | 自主开发桌面、代码库理解、任务委派                 | CLI、Cloud Agents、Work、Wake      |
+| [Qoder IDE](https://qoder.com/)                            | Qoder / 中国     | 自主开发桌面、代码库理解、任务委派                 | CLI、Cloud Agents、Work、Wake      |
 | [TRAE IDE](https://www.trae.ai/)                           | 字节跳动 / 中国  | IDE 与 SOLO 协同、端到端软件构建                   | TRAE Work、SOLO Web/Mobile         |
 | [CodeBuddy IDE](https://www.codebuddy.ai/)                 | 腾讯 / 中国      | 需求、设计、编码、预览到部署；Craft / Plan 模式    | CLI、WorkBuddy                     |
 | [ZCode](https://zcode.z.ai/)                               | 智谱 / 中国      | 面向 GLM 的 Agent IDE、Goal 长任务                 | GLM Coding Plan                    |
-| [文心快码 Comate](https://comate.baidu.com/)               | 百度 / 中国      | AI IDE、Zulu 编程智能体                            | VS Code / JetBrains 插件           |
-| [通义灵码](https://lingma.aliyun.com/)                     | 阿里云 / 中国    | IDE、插件、企业代码助手与 Agent 能力               | VS Code / JetBrains                |
+| [Comate](https://comate.baidu.com/)                        | 百度 / 中国      | AI IDE、Zulu 编程智能体                            | VS Code / JetBrains 插件           |
+| [Lingma](https://lingma.aliyun.com/)                       | 阿里云 / 中国    | IDE、插件、企业代码助手与 Agent 能力               | VS Code / JetBrains                |
 | [Cline](https://docs.cline.bot/cline-overview)             | 开源社区         | 编辑器 Agent，可读写文件、运行命令和操作浏览器     | CLI、JetBrains、ACP                |
 | [Kilo Code](https://kilo.ai/)                              | Kilo / 开源      | 多模型 IDE Agent、模式与团队工作流                 | CLI、Cloud                         |
 | [Roo Code](https://roocode.com/)                           | 开源社区         | VS Code 多模式 Agent、模型与工具可配置             | Cloud / 企业能力                   |
@@ -182,28 +181,6 @@ flowchart TB
 | [Junie](https://www.jetbrains.com/junie/)                                            | JetBrains         | 服务内模型           | 除 IDE 外提供交互式终端入口                                      |
 
 多模型不等于完全可替换。不同模型在工具调用格式、上下文缓存、推理参数、视觉输入和长任务稳定性方面存在差异；Harness 也可能只对部分模型做过完整适配。
-
-## DeepSeek Harness
-
-[DeepSeek Harness](https://www.deepseek.com/harness/en/) 已由 DeepSeek 官方发布，并在 [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) 开源。此前将“DeepSeek Harness”仅理解为“DeepSeek 模型接入第三方 Harness”的说法已经过时。
-
-截至 2026-08-15，可确认的信息包括：
-
-- 官方名称为 **DeepSeek Harness**，命令与 npm 包 [@deepseek-ai/dsh](https://www.npmjs.com/package/@deepseek-ai/dsh) 使用 **dsh**；
-- 2026-08-13 公开源代码，采用 MIT License；
-- 当前状态是 **Developer Preview（开发者预览）**，官方明确提示仍在快速迭代，可能发生不兼容变更；
-- 核心理念是 “Everything is a Plugin”，模型、工具、skills、session、sandbox、storage、agent loop、scheduler 和 UI 都可以作为插件替换或组合；
-- 提供 Standard、Code、Minimal、Creator 等预设模式；
-- 支持查看提示、推理、工具调用、结果、子 Agent 调度和上下文注入等轨迹，并提供恢复、分叉、搜索与回放能力；
-- 可通过官方 npm 包启动本地 Web UI。
-
-因此它应同时归入：
-
-1. CLI / Terminal Coding Agent；
-2. Agent Harness / Framework；
-3. 可供研究、二次开发和自定义 Agent 运行时的开源平台。
-
-“正式发布”与“生产稳定版”不是同义词。当前最准确的状态描述是：**官方已正式发布开发者预览版，并公开源码；尚不应把 Preview 当作长期兼容性承诺。**
 
 ## Cloud / Background Coding Agent
 
@@ -260,11 +237,11 @@ Work Agent 的核心不是“什么都能聊”，而是能够处理文件、网
 | [QoderWork](https://docs.qoder.com/zh/qoderwork/introduction)                              | Qoder          | 本地桌面助手；文件、浏览器、桌面控制、定时任务和 IM              | 文档、表格、PPT、数据和网页流程           |
 | [TRAE Work](https://www.trae.ai/)                                                          | 字节跳动       | Desktop / Web / Mobile；Work、Code、Design 等工作入口            | 研究、文档、数据分析、PPT、代码与应用     |
 | [Kimi Work](https://www.kimi.com/zh-cn/products/kimi-work)                                 | 月之暗面       | 本地文件、WebBridge、代码执行、Agent 集群与 Cron                 | 报告、表格、PPT、代码和网页任务           |
-| [CodeBuddy / WorkBuddy](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Product-Guide) | 腾讯 | Coding Harness 向通用工作场景扩展                         | 研究、报告、演示、数据与代码              |
+| [CodeBuddy](https://www.codebuddy.ai/)                                                        | 腾讯           | 从编程入口扩展到研究、文档和多步骤任务                           | 研究、报告、数据与代码                    |
 | [AutoClaw](https://autoclaw.zhipuai.cn/)                                                   | 智谱           | 本地桌面应用、Skills、IM、浏览器和办公自动化                     | 文档、数据、网页流程和长任务              |
 | [QClaw](https://www.tencent.com/zh-cn/articles/2202318.html)                               | 腾讯           | 基于 OpenClaw，本地运行，连接微信 / WhatsApp / Telegram 等渠道  | 生活与办公自动化、远程电脑任务            |
 | [Marvis](https://marvis.qq.com/)                                                           | 腾讯           | 操作系统层级个人助手，面向本地文件、系统与应用                   | 设备管理、文件处理、跨端协作              |
-| [扣子 Coze](https://www.coze.cn/)                                                          | 字节跳动       | 在线 Agent、工作流、知识库、插件与内容 / 应用创建                | Bot、工作流、网页、内容与办公成果         |
+| [Coze](https://www.coze.cn/)                                                             | 字节跳动       | 在线 Agent、工作流、知识库、插件与内容 / 应用创建                | Bot、工作流、网页、内容与办公成果         |
 
 ### 海外与全球代表产品
 
@@ -323,7 +300,7 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 | [Browser Use](https://docs.browser-use.com/)                                | Chromium / 云浏览器            | 开源浏览器 Agent Harness 与托管浏览器任务                     |
 | [Perplexity Computer](https://www.perplexity.ai/help-center/en/articles/13837784-what-is-computer) | 云端沙箱与 SaaS 连接器 | 搜索、工具、连接器、后台与定时执行                            |
 | [Manus My Computer / My Browser](https://manus.im/)                         | 本机 CLI、浏览器与云端 Agent   | 本地文件、命令、应用与浏览器桥接                              |
-| [Google Antigravity](https://antigravity.google/)                           | 开发工作区与浏览器             | 以开发和测试任务为中心的浏览器操作                            |
+| [Antigravity](https://antigravity.google/)                                  | 开发工作区与浏览器             | 以开发和测试任务为中心的浏览器操作                            |
 
 ### 安全基线
 
@@ -348,7 +325,7 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 | [Microsoft AutoGen](https://microsoft.github.io/autogen/)     | 开源多 Agent 框架       | Agent、工具和多 Agent 对话 / 编排                          |
 | [CrewAI](https://www.crewai.com/open-source)                  | 开源框架与平台          | 角色化 Agent 团队与流程自动化                              |
 | [Dify](https://dify.ai/)                                      | 开源应用平台            | 可视化工作流、知识库、模型接入、Agent 与应用发布           |
-| [扣子 Coze](https://www.coze.cn/)                             | 托管平台                | Bot、Workflow、插件、知识库和多模态应用                    |
+| [Coze](https://www.coze.cn/)                                  | 托管平台                | Bot、Workflow、插件、知识库和多模态应用                    |
 | [n8n](https://n8n.io/)                                        | 工作流自动化平台        | 将 LLM / Agent 节点与 SaaS、数据库和企业流程连接           |
 
 如果目标是“直接完成个人工作”，优先看 Work / Personal Agent；如果目标是“开发和运营自己的 Agent”，再重点比较本节的平台、SDK、部署和可观测性。

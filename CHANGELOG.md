@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Added product-family mapping to clarify how models, harnesses, surfaces, cloud execution, and plans relate across major vendors.
 - Corrected DeepSeek Harness to reflect its official developer-preview release and open-source repository.
 - Added clearer status, evidence, compatibility, security, and maintenance guidance.
+- Simplified product naming across tables and removed the disproportionate DeepSeek Harness standalone section.
 
 ## [0.1.0] - 2026-08-15
 
