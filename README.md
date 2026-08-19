@@ -423,10 +423,10 @@ API Router、Inference Provider 和云模型市场提供统一接口、模型目
 
 | 平台                                                              | 覆盖与特点                                      | 使用前重点检查                         |
 | ----------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------- |
-| [SiliconFlow](https://siliconflow.cn/)                            | 国内外开源与商业模型 API、统一推理平台          | 模型版本、地域、速率、数据和发票       |
-| [阿里云百炼 Model Studio](https://www.aliyun.com/product/bailian) | Qwen 及第三方模型、Agent / 应用构建和云能力     | 地域端点、不同产品线 Key、模型白名单   |
+| [硅基流动 SiliconFlow](https://siliconflow.cn/)                   | 国内外开源与商业模型 API、统一推理平台          | 模型版本、地域、速率、数据和发票       |
+| [阿里云百炼](https://www.aliyun.com/product/bailian)              | Qwen 及第三方模型、Agent / 应用构建和云能力     | 地域端点、不同产品线 Key、模型白名单   |
 | [火山引擎方舟](https://www.volcengine.com/product/ark)            | 豆包与多模型服务、推理和 Agent 工具链           | Endpoint、上下文、并发与套餐边界       |
-| [腾讯云 TokenHub](https://cloud.tencent.cn/product/tokenhub)      | 多模型 Token、推理与 Agent 工具适配             | Coding / 通用套餐差异、调度与兼容协议  |
+| [腾讯云](https://cloud.tencent.cn/product/tokenhub)               | 多模型 Token、推理与 Agent 工具适配             | Coding / 通用套餐差异、调度与兼容协议  |
 | [百度智能云千帆](https://cloud.baidu.com/doc/qianfan/index.html)  | 文心及多模型平台、Agent 开发与企业服务          | 区域、模型映射、配额和接口差异         |
 | [魔搭 ModelScope](https://modelscope.cn/)                         | 模型社区、在线推理、开发和部署生态              | 社区模型许可、托管限制和生产 SLA       |
 | [共绩算力](https://suanli.cn/)                                    | Serverless GPU 推理，提供主流模型按量通道       | 与官方价差、限流、服务稳定性与数据条款 |
