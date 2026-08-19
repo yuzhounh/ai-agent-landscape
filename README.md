@@ -394,7 +394,7 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 | ----------------------------------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------- |
 | [AI Coding Plan 平台评测与对比](https://vibecoding.dreamfree.space/)          | Coding Plan 平台横评、模型基准与选型文章          | 第三方社区工具，数据和结论请以官方来源交叉核对   |
 | [awesome-coding-plan](https://github.com/mahonzhan/awesome-coding-plan)       | 各厂家 Coding Plan 实际价值对比                  | 第三方社区整理，套餐与价格请以官方页面核对       |
-| [CC.SWITCH](https://cc-switch.site/)                                          | 开源桌面工具，为 Claude Code、Codex 等 CLI 一键切换 API 供应商与配置 | 开源项目见 [farion1231/cc-switch](https://github.com/farion1231/cc-switch)；请仅从官方渠道下载 |
+| [CC.SWITCH](https://ccswitch.io/)                                             | 开源桌面工具，为 Claude Code、Codex 等 CLI 一键切换 API 供应商与配置 | 开源项目见 [farion1231/cc-switch](https://github.com/farion1231/cc-switch)；请仅从官方渠道下载 |
 
 以上为社区整理的第三方工具与对比参考，不属于官方信息；套餐、价格和模型列表变化很快，使用前请回到各厂商官方页面核对。
 
@@ -427,6 +427,8 @@ API Router、Inference Provider 和云模型市场提供统一接口、模型目
 | [腾讯云 TokenHub](https://cloud.tencent.cn/product/tokenhub)      | 多模型 Token、推理与 Agent 工具适配             | Coding / 通用套餐差异、调度与兼容协议  |
 | [百度智能云千帆](https://cloud.baidu.com/doc/qianfan/index.html)  | 文心及多模型平台、Agent 开发与企业服务          | 区域、模型映射、配额和接口差异         |
 | [魔搭 ModelScope](https://modelscope.cn/)                         | 模型社区、在线推理、开发和部署生态              | 社区模型许可、托管限制和生产 SLA       |
+| [共绩算力](https://suanli.cn/)                                  | Serverless GPU 推理，提供主流模型按量通道          | 与官方价差、限流、服务稳定性与数据条款 |
+| [优云智算](https://www.compshare.cn/)                           | GLM、DeepSeek 等主流模型 Coding Plan，倍率公开   | 套餐档位、倍率折算和并发限流           |
 
 ### 官方平台与非官方中转站
 
