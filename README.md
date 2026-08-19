@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/icon.svg" alt="AI Agent Landscape logo" width="128">
+</p>
+
 # AI Agent Landscape
 
 > AI Agent 产品、运行形态、模型与用量方案的中文生态地图

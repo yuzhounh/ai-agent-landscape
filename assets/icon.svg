@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="AI Agent Landscape">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4338ca"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <g stroke="#c7d2fe" stroke-width="2" opacity="0.45">
+    <path d="M24 36h80M24 64h80M24 92h80M36 24v80M64 24v80M92 24v80"/>
+  </g>
+  <g fill="#ffffff" stroke="#eef2ff" stroke-width="2">
+    <circle cx="36" cy="44" r="8"/>
+    <circle cx="64" cy="36" r="8"/>
+    <circle cx="92" cy="52" r="8"/>
+    <circle cx="44" cy="84" r="8"/>
+    <circle cx="78" cy="78" r="8"/>
+    <circle cx="96" cy="96" r="7"/>
+  </g>
+  <g stroke="#e0e7ff" stroke-width="3" stroke-linecap="round">
+    <path d="M42 46 L58 38"/>
+    <path d="M70 40 L86 50"/>
+    <path d="M40 78 L72 74"/>
+    <path d="M84 58 L92 89"/>
+    <path d="M52 84 L70 78"/>
+  </g>
+</svg>
