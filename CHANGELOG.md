@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Corrected DeepSeek Harness to reflect its official developer-preview release and open-source repository.
 - Added clearer status, evidence, compatibility, security, and maintenance guidance.
 - Simplified product naming across tables and removed the disproportionate DeepSeek Harness standalone section.
+- Enriched the plan table based on a third-party Coding Plan comparison: added Xiaomi MiMo Token Plan, Codex, and Claude Code quota rows, and refreshed tier and availability notes for Zhipu, Model Studio, Ark, Kimi, MiniMax, OpenCode, and Ollama.
 
 ## [0.1.0] - 2026-08-15
 

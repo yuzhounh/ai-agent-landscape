@@ -355,20 +355,23 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 
 | 方案                                 | 提供方      | 类型与特点                                                             | 官方信息                                                                 |
 | ------------------------------------ | ----------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| GLM Coding Plan                      | 智谱        | 面向官方支持 Coding Agent 的订阅方案，使用 GLM 系列                    | [快速开始](https://docs.bigmodel.cn/cn/coding-plan/quick-start)          |
-| 百炼 Coding Plan                     | 阿里云      | 多模型、专用 Key 与 Endpoint，兼容多种 Coding / Personal Agent         | [官方文档](https://help.aliyun.com/zh/model-studio/coding-plan)          |
+| GLM Coding Plan                      | 智谱        | 官方 Coding Agent 订阅，使用 GLM 系列；新 Token Plan 档位开放购买 | [快速开始](https://docs.bigmodel.cn/cn/coding-plan/quick-start)          |
+| 百炼 Coding Plan                     | 阿里云      | 多模型、专用 Key 与 Endpoint，Coding / Token 多档，兼容多种 Agent  | [官方文档](https://help.aliyun.com/zh/model-studio/coding-plan)          |
 | 腾讯云 Token Plan                    | 腾讯云      | 通用与混元系列套餐，面向编码及 OpenClaw 类工具                         | [产品页](https://cloud.tencent.cn/act/pro/tokenplan)                     |
-| 火山方舟 Coding Plan / Agent Plan    | 火山引擎    | 面向主流编程工具和 Agent 的订阅额度                                    | [官方文档](https://www.volcengine.com/docs/82379/2165245)                |
+| 火山方舟 Coding Plan / Agent Plan    | 火山引擎    | 面向主流编程工具和 Agent 的订阅额度，模型池覆盖多家主流模型            | [官方文档](https://www.volcengine.com/docs/82379/2165245)                |
 | 百度千帆 Coding Plan / Token Plan    | 百度智能云  | 多模型编码订阅与更通用的 Token 量包                                   | [千帆平台](https://cloud.baidu.com/product/codingplan.html)              |
-| Kimi Code                            | 月之暗面    | 会员或 Coding 订阅内的 CLI、VS Code 和兼容 API Key                     | [官方文档](https://www.kimi.com/code/docs/en/)                           |
-| MiniMax Token Plan                   | MiniMax     | MiniMax Code 与可供兼容工具使用的 Token Plan                           | [订阅页](https://platform.minimax.io/subscribe/coding-plan)              |
+| Kimi Code                            | 月之暗面    | 会员或 Coding 订阅内的 CLI、VS Code 和兼容 API Key；会员需预约     | [官方文档](https://www.kimi.com/code/docs/en/)                           |
+| MiniMax Token Plan                   | MiniMax     | Plus / Max / Ultra 三档公开，不限购，全模态额度共享               | [订阅页](https://platform.minimax.io/subscribe/coding-plan)              |
+| 小米 MiMo Token Plan                 | 小米        | Lite / Standard / Pro / Max 四档，无 5 小时硬限                       | [小米 MiMo](https://mimo.xiaomi.com/)                                    |
 | Qwen / QwenCloud 相关 Plan           | Qwen / 阿里 | Qwen 生态的 Coding / Token 类订阅；名称与套餐随地区和阶段变化          | [Qwen Code](https://qwenlm.github.io/qwen-code-docs/)                    |
 | DeepSeek API                         | DeepSeek    | 主要为按量 API；可用于官方 Harness 或兼容工具                          | [API 文档](https://api-docs.deepseek.com/)                               |
 | OpenAI 官方 API                      | OpenAI      | 通用按量 API，与产品席位和 Chat 会员分开                               | [OpenAI API](https://developers.openai.com/api/)                         |
 | Anthropic 官方 API                   | Anthropic   | 通用按量 API，与产品席位和 Chat 会员分开                               | [Claude API](https://docs.anthropic.com/)                                |
 | xAI 官方 API                         | xAI         | 通用按量 API，与产品席位和 Chat 会员分开                               | [xAI API](https://docs.x.ai/)                                            |
-| OpenCode Zen / OpenCode Go           | OpenCode    | 精选模型网关与低价订阅套餐，兼容 OpenAI / Anthropic 协议与多种编程工具 | [Zen 文档](https://opencode.ai/docs/zen/)                                |
-| Ollama Cloud Plan                    | Ollama      | 云端开源模型订阅，按云资源用量计量，API 与本地 Ollama 保持一致         | [Ollama Cloud](https://ollama.com/cloud)                                 |
+| Codex 会员额度                       | OpenAI      | ChatGPT 订阅附带的 Coding Agent 额度，按周额度管理                     | [定价页](https://openai.com/chatgpt/pricing/)                            |
+| Claude Code 会员额度                 | Anthropic   | Pro / Max 订阅附带的 Coding Agent 额度，按滚动窗口管理                 | [定价页](https://www.anthropic.com/pricing)                              |
+| OpenCode Zen / OpenCode Go           | OpenCode    | 精选模型网关与订阅套餐，Go 档聚合多家主流模型，兼容多种编程工具     | [Zen 文档](https://opencode.ai/docs/zen/)                                |
+| Ollama Cloud Plan                    | Ollama      | 云端开源模型订阅，聚合各家开源模型，按云资源用量计量                     | [Ollama Cloud](https://ollama.com/cloud)                                 |
 
 ### 兼容性不是只有“能填 Base URL”
 
@@ -510,7 +513,7 @@ Chat 产品、基础模型 / API 和 Agent 产品是三个不同层次。Chat �
 ## 信息时效与声明
 
 - 当前版本：**v0.1.0**
-- 最近系统核验：**2026-08-15**
+- 最近系统核验：**2026-08-19**
 - 本仓库是独立的社区整理项目，与文中任何厂商均无隶属、授权、赞助或背书关系。
 - 产品名称与商标归各自权利人所有；链接优先指向官方来源。
 - “支持”表示官方页面在核验时公开描述该能力，不代表所有地区、账号、系统、套餐或灰度版本都可用。
