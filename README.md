@@ -388,15 +388,16 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 
 本仓库刻意不固化价格和精确额度：促销、模型列表、请求窗口和地区政策变化很快，静态数字容易误导。
 
-### 第三方工具与对比参考
+需要在多个 Plan 或 API 供应商之间频繁切换时，可以用社区配置切换工具统一管理上述配置。例如开源桌面工具 [CC.SWITCH](https://ccswitch.io/)，可在 Claude Code、Codex、OpenCode 等 CLI 之间一键切换 Base URL、Key 与默认模型，避免手改配置文件；项目见 [farion1231/cc-switch](https://github.com/farion1231/cc-switch)，请仅从官方渠道下载。这类工具只做本地配置切换，本身不提供额度或请求代理。
+
+### 第三方对比参考
 
 | 工具                                                                          | 内容                                             | 使用提示                                           |
 | ----------------------------------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------- |
 | [AI Coding Plan 平台评测与对比](https://vibecoding.dreamfree.space/)          | Coding Plan 平台横评、模型基准与选型文章          | 第三方社区工具，数据和结论请以官方来源交叉核对   |
 | [awesome-coding-plan](https://github.com/mahonzhan/awesome-coding-plan)       | 各厂家 Coding Plan 实际价值对比                  | 第三方社区整理，套餐与价格请以官方页面核对       |
-| [CC.SWITCH](https://ccswitch.io/)                                             | 开源桌面工具，为 Claude Code、Codex 等 CLI 一键切换 API 供应商与配置 | 开源项目见 [farion1231/cc-switch](https://github.com/farion1231/cc-switch)；请仅从官方渠道下载 |
 
-以上为社区整理的第三方工具与对比参考，不属于官方信息；套餐、价格和模型列表变化很快，使用前请回到各厂商官方页面核对。
+以上为社区整理的第三方对比参考，不属于官方信息；套餐、价格和模型列表变化很快，使用前请回到各厂商官方页面核对。
 
 ## API Router / 聚合平台
 
