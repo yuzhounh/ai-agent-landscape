@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://github.com/yuzhounh/ai-agent-landscape/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/version-v0.1.0-blue.svg" alt="Version v0.1.0" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" /></a>
-  <a href="#信息时效与声明"><img src="https://img.shields.io/badge/last_verified-2026--08--15-2ea44f.svg" alt="Last verified 2026-08-15" /></a>
+  <a href="#信息时效与声明"><img src="https://img.shields.io/badge/last_verified-2026--08--19-2ea44f.svg" alt="Last verified 2026-08-19" /></a>
 </p>
 
 AI Agent 已经不再只是聊天框或代码补全插件。一个完整的 Agent 产品，通常由模型、上下文工程、工具、执行环境、权限系统和交付界面共同组成，可以理解需求、拆解任务、调用工具、修改文件、运行代码，并在一定程度上持续工作直至交付结果。
@@ -47,10 +47,10 @@ AI Agent 已经不再只是聊天框或代码补全插件。一个完整的 Agen
 
 | 维度                          | 主要问题                         | 常见取值                                                            |
 | ----------------------------- | -------------------------------- | ------------------------------------------------------------------- |
-| 交&#8288;互&#8288;入&#8288;口 | 用户在哪里指挥 Agent？           | IDE、终端、网页、桌面应用、GitHub、聊天工具                         |
-| 执&#8288;行&#8288;位&#8288;置 | 任务在哪里运行？                 | 本机、隔离沙箱、云端 VM、CI / GitHub Actions、移动设备              |
-| 工&#8288;作&#8288;对&#8288;象 | Agent 主要操作什么？             | 代码仓库、网页、桌面 GUI、本地文件、文档、表格、演示稿、第三方 SaaS |
-| 自&#8288;治&#8288;方&#8288;式 | Agent 能持续工作多久、如何交付？ | 同步协作、后台异步、定时任务、常驻服务、PR / 文件 / 报告交付        |
+| 交&#8288;互&#8288;入&#8288;口                      | 用户在哪里指挥 Agent？           | IDE、终端、网页、桌面应用、GitHub、聊天工具                         |
+| 执&#8288;行&#8288;位&#8288;置                      | 任务在哪里运行？                 | 本机、隔离沙箱、云端 VM、CI / GitHub Actions、移动设备              |
+| 工&#8288;作&#8288;对&#8288;象                      | Agent 主要操作什么？             | 代码仓库、网页、桌面 GUI、本地文件、文档、表格、演示稿、第三方 SaaS |
+| 自&#8288;治&#8288;方&#8288;式                      | Agent 能持续工作多久、如何交付？ | 同步协作、后台异步、定时任务、常驻服务、PR / 文件 / 报告交付        |
 
 ### 几个常被混用的概念
 
@@ -115,11 +115,11 @@ flowchart TB
 
 这张表用于理解“同一品牌为什么会在多个分类里重复出现”。
 
-| 生态 / 厂商       | 模型与 API                       | 编程入口                                      | 通用工作 / 个人入口                         | 云端或其他形态                     |
-| ----------------- | -------------------------------- | --------------------------------------------- | -------------------------------------------- | ---------------------------------- |
+| 生态 / 厂商       | 模型与 API                        | 编程入口                                      | 通用工作 / 个人入口                          | 云端或其他形态                     |
+| ----------------- | --------------------------------- | --------------------------------------------- | -------------------------------------------- | ---------------------------------- |
 | OpenAI            | GPT、OpenAI API                   | Codex CLI、IDE 扩展、Codex Desktop            | ChatGPT、ChatGPT agent                       | Codex cloud、GitHub Action         |
 | Anthropic         | Claude、Claude API                | Claude Code CLI、IDE、Desktop                 | Claude、Claude Cowork、Computer Use          | Claude Code on the web、GitHub     |
-| Google            | Gemini、Gemini API                | Antigravity、Gemini CLI、Jules                | Gemini                                      | Kiro 由 AWS 提供，不属 Google      |
+| Google            | Gemini、Gemini API                | Antigravity、Gemini CLI、Jules                | Gemini                                       | Kiro 由 AWS 提供，不属 Google      |
 | AWS               | Bedrock                           | Kiro IDE、Kiro CLI                            | —                                            | Kiro Web / autonomous agent        |
 | xAI               | Grok、xAI API                     | Grok Build                                    | Grok                                         | Build 无头 / 自动化形态            |
 | Meta              | Llama、Muse                       | Muse Code                                     | Meta AI                                      | 开源权重与开发者生态               |
@@ -146,7 +146,7 @@ flowchart TB
 | [Antigravity](https://antigravity.google/)                 | Google / 美国    | Agent-first 开发平台、多 Agent、浏览器与终端       | CLI、API Agent                     |
 | [GitHub Copilot](https://github.com/features/copilot)      | GitHub / 美国    | IDE Agent、Plan、补全、多模型与 GitHub 上下文      | CLI、Coding Agent、Code Review     |
 | [Zed Agent Panel](https://zed.dev/docs/ai/agents)          | Zed / 美国       | 原生 Agent、ACP 外部 Agent、终端 Agent 三种路径    | 可接 Claude Code、Codex、OpenCode  |
-| [JetBrains Junie](https://www.jetbrains.com/junie/)        | JetBrains        | IDE 内规划、编辑、运行测试与终端命令               | CLI / terminal                    |
+| [JetBrains Junie](https://www.jetbrains.com/junie/)        | JetBrains        | IDE 内规划、编辑、运行测试与终端命令               | CLI / terminal                     |
 | [Qoder IDE](https://qoder.com/)                            | Qoder / 中国     | 自主开发桌面、代码库理解、任务委派                 | CLI、Cloud Agents、Work、Wake      |
 | [TRAE IDE](https://www.trae.ai/)                           | 字节跳动 / 中国  | IDE 与 SOLO 协同、端到端软件构建                   | TRAE Work、SOLO Web/Mobile         |
 | [CodeBuddy IDE](https://www.codebuddy.ai/)                 | 腾讯 / 中国      | 需求、设计、编码、预览到部署；Craft / Plan 模式    | CLI、WorkBuddy                     |
@@ -163,7 +163,7 @@ flowchart TB
 
 终端 Agent 直接工作在仓库和工具链旁，适合开发者、服务器环境、自动化脚本和可组合工作流。它们大致可分为“模型厂商主导”与“多模型 / 模型无关”两类。
 
-| 产品                                                                                 | 开发者 / 生态     | 模型关系             | 定位与备注                                                     |
+| 产品                                                                                 | 开发者 / 生态     | 模型关系             | 定位与备注                                                       |
 | ------------------------------------------------------------------------------------ | ----------------- | -------------------- | ---------------------------------------------------------------- |
 | [Codex CLI](https://developers.openai.com/codex/cli/)                                | OpenAI            | OpenAI 主导          | 开源终端编程 Agent，可读写文件、运行命令并连接 Codex 生态        |
 | [Claude Code](https://code.claude.com/docs/en/overview)                              | Anthropic         | Claude 主导          | 终端优先，支持 hooks、skills、MCP、subagents 与多种执行入口      |
@@ -171,19 +171,19 @@ flowchart TB
 | [Antigravity](https://antigravity.google/)                                           | Google            | Gemini 生态          | Agent-first 开发产品的终端 / 自动化入口                          |
 | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)                  | DeepSeek          | DeepSeek 主导        | 官方开源 Agent Harness；开发者预览，插件化、可替换执行组件       |
 | [Grok Build](https://docs.x.ai/build/overview)                                       | xAI               | Grok 主导            | 可交互或无头运行的开源 Coding Agent / TUI，支持 ACP              |
-| [Muse Code](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2/) | Meta              | Muse 主导            | 面向 Muse Spark 的终端编程 Agent                                |
+| [Muse Code](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2/) | Meta              | Muse 主导            | 面向 Muse Spark 的终端编程 Agent                                 |
 | [Qwen Code](https://qwenlm.github.io/qwen-code-docs/)                                | Qwen / 阿里       | 多协议，Qwen 优化    | 开源 CLI；支持多模型、MCP、subagents、agent teams 与 daemon      |
 | [Kimi Code](https://www.kimi.com/code/docs/en/)                                      | 月之暗面          | Kimi 主导            | CLI 与 VS Code；读写代码、运行命令、联网搜索，可接会员 API Key   |
 | [Kiro CLI](https://kiro.dev/docs/cli/quick-start/)                                   | AWS               | Kiro 服务            | 终端 Agent、custom agents、steering、MCP 与 subagents            |
 | [Qoder CLI](https://docs.qoder.com/cli/quick-start)                                  | Qoder             | 多模型               | 终端编程伙伴与可扩展 Agent 引擎                                  |
 | [CodeBuddy Code](https://www.codebuddy.ai/docs/cli/)                                 | 腾讯              | 多模型 / 自有服务    | CLI、Desktop、IDE、ACP、MCP、无头模式与 Dynamic Workflows        |
-| [MUSACode](https://docs.mthreads.com/playbook/playbook-doc-online/musacode/)          | 摩尔线程          | 自有与兼容模型       | 通用开发与 MUSA 算子工作流                                      |
+| [MUSACode](https://docs.mthreads.com/playbook/playbook-doc-online/musacode/)         | 摩尔线程          | 自有与兼容模型       | 通用开发与 MUSA 算子工作流                                       |
 | [OpenCode](https://opencode.ai/docs/)                                                | 开源社区          | 模型无关             | 开源终端 / Desktop / IDE Agent，支持多家模型提供方               |
 | [Cline CLI](https://docs.cline.bot/)                                                 | 开源社区          | 模型无关             | Cline 的终端入口，与编辑器和任务管理形态衔接                     |
 | [Kilo CLI](https://kilo.ai/cli)                                                      | Kilo / 开源       | 模型无关             | 开源终端 Agent，可与 IDE 和 Kilo Cloud 组合                      |
 | [Aider](https://aider.chat/docs/)                                                    | 开源社区          | 模型无关             | 经典终端 AI Pair Programming 工具，Git 工作流成熟                |
-| [Goose](https://github.com/aaif-goose/goose)                                        | AAIF / 开源       | 模型无关             | 本地通用 Agent，提供 CLI、Desktop、API 与 MCP 扩展               |
-| [OpenHands CLI / SDK](https://docs.openhands.dev/sdk/index)                         | OpenHands / 开源  | 模型无关             | 可本地、服务器或云端运行的软件工程 Agent Harness                 |
+| [Goose](https://github.com/aaif-goose/goose)                                         | AAIF / 开源       | 模型无关             | 本地通用 Agent，提供 CLI、Desktop、API 与 MCP 扩展               |
+| [OpenHands CLI / SDK](https://docs.openhands.dev/sdk/index)                          | OpenHands / 开源  | 模型无关             | 可本地、服务器或云端运行的软件工程 Agent Harness                 |
 | [Junie](https://www.jetbrains.com/junie/)                                            | JetBrains         | 服务内模型           | 除 IDE 外提供交互式终端入口                                      |
 
 多模型不等于完全可替换。不同模型在工具调用格式、上下文缓存、推理参数、视觉输入和长任务稳定性方面存在差异；Harness 也可能只对部分模型做过完整适配。
@@ -195,7 +195,7 @@ flowchart TB
 | 产品                                                                                                              | 典型执行方式                              | 主要交付物                         |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------------------------------- |
 | [OpenAI Codex cloud](https://developers.openai.com/codex/cloud/)                                                  | OpenAI 托管云环境，可从多入口委派任务     | 代码变更、检查结果、PR             |
-| [Claude Code on the web](https://code.claude.com/docs/en/web-quickstart)                                         | Anthropic 托管隔离 VM，可并行后台执行     | 分支、diff、PR、可继续会话         |
+| [Claude Code on the web](https://code.claude.com/docs/en/web-quickstart)                                          | Anthropic 托管隔离 VM，可并行后台执行     | 分支、diff、PR、可继续会话         |
 | [Cursor Background Agents](https://docs.cursor.com/background-agents)                                             | 云端隔离环境异步工作                      | 分支、diff、PR                     |
 | [Kiro Web](https://kiro.dev/docs/web/)                                                                            | 隔离云沙箱；协作、Spec 与 autonomous 模式 | 分支、PR、自动化任务               |
 | [GitHub Copilot coding agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) | GitHub Actions 驱动的异步 Agent           | Pull request                       |
@@ -212,20 +212,21 @@ flowchart TB
 
 Repository-native Agent 以 Issue、Pull Request、Review、Actions 或仓库事件为一等任务对象，天然适合异步委派和团队审查。
 
-| 产品                                                                  | 原生入口                              | 工作闭环                                      |
-| --------------------------------------------------------------------- | ------------------------------------- | --------------------------------------------- |
-| [GitHub Copilot coding agent](https://github.com/features/ai)         | GitHub Issue、Agents、VS Code         | Issue → 分支 → Actions → PR → Review          |
-| [OpenAI Codex](https://developers.openai.com/codex/)                  | GitHub 连接、云任务、GitHub Action    | 仓库任务 → 沙箱执行 → Review / PR             |
-| [Claude Code](https://code.claude.com/docs/en/platforms)              | GitHub App、Web、Actions              | Issue / 仓库任务 → 云环境或 Action → PR       |
-| [Kiro Web](https://kiro.dev/docs/web/)                                | GitHub / GitLab 仓库、Issue、Web      | 任务 → 云沙箱 → 分支 → PR / MR                |
-| [Jules](https://jules.google/)                                        | GitHub 仓库、Issue 标签、API          | 仓库 / Issue → 云 VM → PR                     |
-| [Devin](https://devin.ai/)                                            | GitHub 与工单集成                     | 任务 → 实现与测试 → PR                        |
-| [OpenHands](https://www.openhands.dev/)                               | GitHub、平台任务、SDK                  | 任务 → 沙箱或自托管执行 → PR                  |
-| [Cursor Background Agents](https://docs.cursor.com/background-agents) | 编辑器、Web / Mobile 与仓库           | 后台任务 → 分支 → PR                          |
-| [CodeRabbit](https://docs.coderabbit.ai/)                             | GitHub、GitLab、Bitbucket、Azure DevOps | PR Review → 建议 / 修复 → Agent 交接        |
-| [Greptile](https://www.greptile.com/docs/introduction)                | GitHub / GitLab App                   | 全仓索引 → PR Review → 一键交给 Coding Agent  |
-| [Qodo Merge / PR-Agent](https://www.qodo.ai/products/qodo-merge/)     | PR、Review、Git 平台                  | PR 分析、摘要、审查、建议与合并辅助            |
-| [Sweep](https://github.com/sweepai/sweep)                             | GitHub Issue / PR                     | Issue → 代码修改 → PR；开源项目形态需按版本核验 |
+| 产品                                                                  | 原生入口                                            | 工作闭环                                        |
+| --------------------------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------- |
+| [GitHub Copilot coding agent](https://github.com/features/ai)         | GitHub Issue、Agents、VS Code                       | Issue → 分支 → Actions → PR → Review            |
+| [OpenAI Codex](https://developers.openai.com/codex/)                  | GitHub 连接、云任务、GitHub Action                  | 仓库任务 → 沙箱执行 → Review / PR               |
+| [Claude Code](https://code.claude.com/docs/en/platforms)              | GitHub App、Web、Actions                            | Issue / 仓库任务 → 云环境或 Action → PR         |
+| [Kiro Web](https://kiro.dev/docs/web/)                                | GitHub / GitLab 仓库、Issue、Web                    | 任务 → 云沙箱 → 分支 → PR / MR                  |
+| [Jules](https://jules.google/)                                        | GitHub 仓库、Issue 标签、API                        | 仓库 / Issue → 云 VM → PR                       |
+| [Devin](https://devin.ai/)                                            | GitHub 与工单集成                                   | 任务 → 实现与测试 → PR                          |
+| [OpenHands](https://www.openhands.dev/)                               | GitHub、平台任务、SDK                               | 任务 → 沙箱或自托管执行 → PR                    |
+| [Cursor Background Agents](https://docs.cursor.com/background-agents) | 编辑器、Web / Mobile 与仓库                         | 后台任务 → 分支 → PR                            |
+| [Origin](https://cursor.com/cn/changelog/origin-code-hosting)         | Cursor 代码托管、PR 与 GitHub 双向同步（早期 Beta） | 仓库 / PR → Agent 问答、修改与推送 → Review     |
+| [CodeRabbit](https://docs.coderabbit.ai/)                             | GitHub、GitLab、Bitbucket、Azure DevOps             | PR Review → 建议 / 修复 → Agent 交接            |
+| [Greptile](https://www.greptile.com/docs/introduction)                | GitHub / GitLab App                                 | 全仓索引 → PR Review → 一键交给 Coding Agent    |
+| [Qodo Merge / PR-Agent](https://www.qodo.ai/products/qodo-merge/)     | PR、Review、Git 平台                                | PR 分析、摘要、审查、建议与合并辅助             |
+| [Sweep](https://github.com/sweepai/sweep)                             | GitHub Issue / PR                                   | Issue → 代码修改 → PR；开源项目形态需按版本核验 |
 
 CodeRabbit、Greptile 和 Qodo 的主定位更接近审查、验证或 PR 编排，而不是独立完成所有开发工作。它们与 Codex、Claude Code、Cursor、Devin 等实现型 Agent 可以互补。
 
@@ -243,21 +244,21 @@ Work Agent 的核心不是“什么都能聊”，而是能够处理文件、网
 | [QoderWork](https://docs.qoder.com/zh/qoderwork/introduction)                              | Qoder          | 本地桌面助手；文件、浏览器、桌面控制、定时任务和 IM              | 文档、表格、PPT、数据和网页流程           |
 | [TRAE Work](https://www.trae.ai/)                                                          | 字节跳动       | Desktop / Web / Mobile；Work、Code、Design 等工作入口            | 研究、文档、数据分析、PPT、代码与应用     |
 | [Kimi Work](https://www.kimi.com/zh-cn/products/kimi-work)                                 | 月之暗面       | 本地文件、WebBridge、代码执行、Agent 集群与 Cron                 | 报告、表格、PPT、代码和网页任务           |
-| [CodeBuddy](https://www.codebuddy.ai/)                                                        | 腾讯           | 从编程入口扩展到研究、文档和多步骤任务                           | 研究、报告、数据与代码                    |
+| [CodeBuddy](https://www.codebuddy.ai/)                                                     | 腾讯           | 从编程入口扩展到研究、文档和多步骤任务                           | 研究、报告、数据与代码                    |
 | [AutoClaw](https://autoclaw.zhipuai.cn/)                                                   | 智谱           | 本地桌面应用、Skills、IM、浏览器和办公自动化                     | 文档、数据、网页流程和长任务              |
-| [QClaw](https://www.tencent.com/zh-cn/articles/2202318.html)                               | 腾讯           | 基于 OpenClaw，本地运行，连接微信 / WhatsApp / Telegram 等渠道  | 生活与办公自动化、远程电脑任务            |
+| [QClaw](https://www.tencent.com/zh-cn/articles/2202318.html)                               | 腾讯           | 基于 OpenClaw，本地运行，连接微信 / WhatsApp / Telegram 等渠道   | 生活与办公自动化、远程电脑任务            |
 | [Marvis](https://marvis.qq.com/)                                                           | 腾讯           | 操作系统层级个人助手，面向本地文件、系统与应用                   | 设备管理、文件处理、跨端协作              |
-| [Coze](https://www.coze.cn/)                                                             | 字节跳动       | 在线 Agent、工作流、知识库、插件与内容 / 应用创建                | Bot、工作流、网页、内容与办公成果         |
+| [Coze](https://www.coze.cn/)                                                               | 字节跳动       | 在线 Agent、工作流、知识库、插件与内容 / 应用创建                | Bot、工作流、网页、内容与办公成果         |
 
 ### 海外与全球代表产品
 
-| 产品                                                                                      | 团队          | 执行特点                                                       | 典型成果                                  |
-| ----------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------- | ----------------------------------------- |
-| [Claude Cowork](https://claude.com/product/cowork)                                        | Anthropic     | 桌面工作区、受控本地文件、连接器与多步骤知识工作               | 文档、数据、跨应用成果                    |
-| [ChatGPT agent](https://openai.com/index/introducing-chatgpt-agent/)                      | OpenAI        | 云端虚拟计算机、浏览器、代码与连接器                           | 研究、表格、演示稿和网页操作              |
-| [Manus](https://manus.im/)                                                                | Manus         | 云端通用 Agent，并提供 Desktop、My Computer 与 Browser         | 研究、网站、数据与多格式成果              |
-| [Perplexity Computer](https://www.perplexity.ai/help-center/en/articles/13837784-what-is-computer) | Perplexity | 云端独立数字工作者、连接器、持久记忆、调度与后台执行           | 研究、应用、邮件、PPT 与跨 SaaS 流程      |
-| [Genspark](https://www.genspark.ai/)                                                      | Genspark      | Super Agent、Custom Agent 与一体化 AI Workspace                | Slides、Docs、Sheets、设计、代码与自动化  |
+| 产品                                                                                               | 团队          | 执行特点                                                       | 典型成果                                  |
+| -------------------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------- | ----------------------------------------- |
+| [Claude Cowork](https://claude.com/product/cowork)                                                 | Anthropic     | 桌面工作区、受控本地文件、连接器与多步骤知识工作               | 文档、数据、跨应用成果                    |
+| [ChatGPT agent](https://openai.com/index/introducing-chatgpt-agent/)                               | OpenAI        | 云端虚拟计算机、浏览器、代码与连接器                           | 研究、表格、演示稿和网页操作              |
+| [Manus](https://manus.im/)                                                                         | Manus         | 云端通用 Agent，并提供 Desktop、My Computer 与 Browser         | 研究、网站、数据与多格式成果              |
+| [Perplexity Computer](https://www.perplexity.ai/help-center/en/articles/13837784-what-is-computer) | Perplexity    | 云端独立数字工作者、连接器、持久记忆、调度与后台执行           | 研究、应用、邮件、PPT 与跨 SaaS 流程      |
+| [Genspark](https://www.genspark.ai/)                                                               | Genspark      | Super Agent、Custom Agent 与一体化 AI Workspace                | Slides、Docs、Sheets、设计、代码与自动化  |
 
 ### 直接竞品与相邻产品的边界
 
@@ -270,20 +271,20 @@ Work Agent 的核心不是“什么都能聊”，而是能够处理文件、网
 
 常驻 Agent 强调持续可达、定时或事件触发、长期状态，以及从聊天工具或移动端远程下达任务。它与一次性桌面 Agent 的边界正在快速融合。
 
-| 产品                                                                | 常驻方式                                                       | 适合场景                                      |
-| ------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------- |
-| [OpenClaw](https://openclaw.ai/)                                    | 自托管 Gateway、消息渠道、Skills、定时与多 Agent 路由          | 私有化、可扩展的个人自动化                    |
-| [QwenPaw](https://github.com/agentscope-ai/QwenPaw)                  | 本地或云端部署、多渠道、多 Agent、记忆、Skills 与定时          | 开源个人助手、文档和消息自动化                |
-| [Hermes Agent](https://hermes-agent.nousresearch.com/docs/)         | 自托管、持久记忆、学习循环、消息渠道与 Desktop / CLI           | 长期个人上下文、自改进技能与服务器常驻        |
-| [AutoClaw](https://autoclaw.zhipuai.cn/)                             | 一键本地部署、IM、Skills、浏览器与办公自动化                   | 降低个人 Agent 部署门槛                       |
-| [AutoGLM-OpenClaw](https://docs.bigmodel.cn/cn/coding-plan/benefits/autoglm-openclaw) | 云端个人电脑、24 小时运行、飞书入口             | 云端简报、提醒、浏览器自动化和跨设备任务      |
-| [QClaw](https://www.tencent.com/zh-cn/articles/2202318.html)         | 本地运行、移动端消息遥控、安全网关                             | 生活、办公、创作与远程电脑任务                |
-| [QoderWake](https://qoder.com/en/blog/qoderwake)                     | 面向 7×24 工作的桌面 / 服务器 Agent                            | 持续目标、远程管理与数字员工                  |
-| [Kimi Work](https://www.kimi.com/zh-cn/products/kimi-work)           | Cron、Agent 集群、本地后台执行                                 | 定时报表、长周期文件与研究任务                |
-| [WorkBuddy](https://cloud.tencent.cn/product/workbuddy)              | 工作台、Skills、企业连接与任务执行                             | 团队办公自动化和可复用工作流                  |
-| [Manus My Computer](https://help.manus.im/en/articles/14178443-what-is-the-my-computer-feature-capable-of) | Desktop 与本地 CLI 执行，可从其他设备委派 | 本地文件、应用开发、远程工作流                |
-| [Perplexity Computer](https://www.perplexity.ai/help-center/en/articles/13837784-what-is-computer) | 云端后台任务、条件触发、定时与连接器             | 邮件、日历、研究和持续监控                    |
-| [Marvis](https://marvis.qq.com/)                                     | 操作系统与跨设备入口                                           | 本地设备和个人工作助手                        |
+| 产品                                                                                                       | 常驻方式                                                       | 适合场景                                      |
+| ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------- |
+| [OpenClaw](https://openclaw.ai/)                                                                           | 自托管 Gateway、消息渠道、Skills、定时与多 Agent 路由          | 私有化、可扩展的个人自动化                    |
+| [QwenPaw](https://github.com/agentscope-ai/QwenPaw)                                                        | 本地或云端部署、多渠道、多 Agent、记忆、Skills 与定时          | 开源个人助手、文档和消息自动化                |
+| [Hermes Agent](https://hermes-agent.nousresearch.com/docs/)                                                | 自托管、持久记忆、学习循环、消息渠道与 Desktop / CLI           | 长期个人上下文、自改进技能与服务器常驻        |
+| [AutoClaw](https://autoclaw.zhipuai.cn/)                                                                   | 一键本地部署、IM、Skills、浏览器与办公自动化                   | 降低个人 Agent 部署门槛                       |
+| [AutoGLM-OpenClaw](https://docs.bigmodel.cn/cn/coding-plan/benefits/autoglm-openclaw)                      | 云端个人电脑、24 小时运行、飞书入口                            | 云端简报、提醒、浏览器自动化和跨设备任务      |
+| [QClaw](https://www.tencent.com/zh-cn/articles/2202318.html)                                               | 本地运行、移动端消息遥控、安全网关                             | 生活、办公、创作与远程电脑任务                |
+| [QoderWake](https://qoder.com/en/blog/qoderwake)                                                           | 面向 7×24 工作的桌面 / 服务器 Agent                            | 持续目标、远程管理与数字员工                  |
+| [Kimi Work](https://www.kimi.com/zh-cn/products/kimi-work)                                                 | Cron、Agent 集群、本地后台执行                                 | 定时报表、长周期文件与研究任务                |
+| [WorkBuddy](https://cloud.tencent.cn/product/workbuddy)                                                    | 工作台、Skills、企业连接与任务执行                             | 团队办公自动化和可复用工作流                  |
+| [Manus My Computer](https://help.manus.im/en/articles/14178443-what-is-the-my-computer-feature-capable-of) | Desktop 与本地 CLI 执行，可从其他设备委派                      | 本地文件、应用开发、远程工作流                |
+| [Perplexity Computer](https://www.perplexity.ai/help-center/en/articles/13837784-what-is-computer)         | 云端后台任务、条件触发、定时与连接器                           | 邮件、日历、研究和持续监控                    |
+| [Marvis](https://marvis.qq.com/)                                                                           | 操作系统与跨设备入口                                           | 本地设备和个人工作助手                        |
 
 是否“永远在线”取决于设备电源、后台权限、云服务状态、套餐限额和具体版本，不能只根据营销名称判断。常驻 Agent 的权限通常比一次性聊天更高，应使用专门账号、独立工作目录、最小化密钥权限和可审计日志。
 
@@ -291,22 +292,22 @@ Work Agent 的核心不是“什么都能聊”，而是能够处理文件、网
 
 Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网页；Computer Use 进一步覆盖桌面 GUI。它们既可以是模型工具，也可以是独立 Harness 或 Work Agent 的一个能力模块。
 
-| 产品 / 能力                                                                 | 主要环境                       | 能力边界                                                      |
-| --------------------------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------- |
-| [AutoGLM](https://autoglm.z.ai/)                                            | 手机、云手机与设备 Agent       | 视觉理解、点击、滑动、输入和跨 App 任务                       |
-| [UI-TARS](https://github.com/bytedance/UI-TARS)                             | 桌面与网页 GUI                 | 字节开源 GUI Agent 模型 / 项目，并提供 UI-TARS Desktop        |
-| [QoderWork](https://docs.qoder.com/zh/qoderwork/introduction)               | 浏览器与桌面应用               | 网页导航、填表、数据提取及桌面点击、输入、滚动                |
-| [Kimi WebBridge](https://www.kimi.com/zh-cn/products/kimi-work)             | 浏览器                         | 多标签页浏览、点击、滚动、提取和表单任务                      |
-| [WorkBuddy](https://cloud.tencent.cn/product/workbuddy)                     | 本地工作台与浏览器             | 文件、网页和办公流程执行                                      |
-| [TRAE Work](https://www.trae.ai/)                                           | Web 与工作区                   | 研究、网页任务和跨工具执行                                    |
-| [ChatGPT agent](https://openai.com/index/introducing-chatgpt-agent/)        | 云端虚拟计算机                 | 浏览器操作、研究、代码和连接器；高影响操作需要确认            |
-| [Claude Computer Use](https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/computer-use-tool) | 浏览器 / 桌面执行环境 | 模型输出鼠标键盘动作，客户端负责实际执行与安全控制            |
-| [Claude Code in Chrome](https://code.claude.com/docs/en/chrome)             | Chrome                         | 测试 Web 应用、调试、填表和提取页面数据                       |
-| [Gemini Computer Use](https://ai.google.dev/gemini-api/docs/computer-use)   | 浏览器、移动与桌面             | 模型生成 GUI 动作，开发者实现客户端执行环境                   |
-| [Browser Use](https://docs.browser-use.com/)                                | Chromium / 云浏览器            | 开源浏览器 Agent Harness 与托管浏览器任务                     |
-| [Perplexity Computer](https://www.perplexity.ai/help-center/en/articles/13837784-what-is-computer) | 云端沙箱与 SaaS 连接器 | 搜索、工具、连接器、后台与定时执行                            |
-| [Manus My Computer / My Browser](https://manus.im/)                         | 本机 CLI、浏览器与云端 Agent   | 本地文件、命令、应用与浏览器桥接                              |
-| [Antigravity](https://antigravity.google/)                                  | 开发工作区与浏览器             | 以开发和测试任务为中心的浏览器操作                            |
+| 产品 / 能力                                                                                           | 主要环境                       | 能力边界                                                      |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------- |
+| [AutoGLM](https://autoglm.z.ai/)                                                                      | 手机、云手机与设备 Agent       | 视觉理解、点击、滑动、输入和跨 App 任务                       |
+| [UI-TARS](https://github.com/bytedance/UI-TARS)                                                       | 桌面与网页 GUI                 | 字节开源 GUI Agent 模型 / 项目，并提供 UI-TARS Desktop        |
+| [QoderWork](https://docs.qoder.com/zh/qoderwork/introduction)                                         | 浏览器与桌面应用               | 网页导航、填表、数据提取及桌面点击、输入、滚动                |
+| [Kimi WebBridge](https://www.kimi.com/zh-cn/products/kimi-work)                                       | 浏览器                         | 多标签页浏览、点击、滚动、提取和表单任务                      |
+| [WorkBuddy](https://cloud.tencent.cn/product/workbuddy)                                               | 本地工作台与浏览器             | 文件、网页和办公流程执行                                      |
+| [TRAE Work](https://www.trae.ai/)                                                                     | Web 与工作区                   | 研究、网页任务和跨工具执行                                    |
+| [ChatGPT agent](https://openai.com/index/introducing-chatgpt-agent/)                                  | 云端虚拟计算机                 | 浏览器操作、研究、代码和连接器；高影响操作需要确认            |
+| [Claude Computer Use](https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/computer-use-tool) | 浏览器 / 桌面执行环境          | 模型输出鼠标键盘动作，客户端负责实际执行与安全控制            |
+| [Claude Code in Chrome](https://code.claude.com/docs/en/chrome)                                       | Chrome                         | 测试 Web 应用、调试、填表和提取页面数据                       |
+| [Gemini Computer Use](https://ai.google.dev/gemini-api/docs/computer-use)                             | 浏览器、移动与桌面             | 模型生成 GUI 动作，开发者实现客户端执行环境                   |
+| [Browser Use](https://docs.browser-use.com/)                                                          | Chromium / 云浏览器            | 开源浏览器 Agent Harness 与托管浏览器任务                     |
+| [Perplexity Computer](https://www.perplexity.ai/help-center/en/articles/13837784-what-is-computer)    | 云端沙箱与 SaaS 连接器         | 搜索、工具、连接器、后台与定时执行                            |
+| [Manus My Computer / My Browser](https://manus.im/)                                                   | 本机 CLI、浏览器与云端 Agent   | 本地文件、命令、应用与浏览器桥接                              |
+| [Antigravity](https://antigravity.google/)                                                            | 开发工作区与浏览器             | 以开发和测试任务为中心的浏览器操作                            |
 
 ### 安全基线
 
@@ -321,18 +322,18 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 
 这一类面向开发者或团队创建自己的 Agent、工作流和产品。它们通常不是现成的“AI 同事”，但构成 Agent 生态的重要编排层。
 
-| 项目 / 平台                                                   | 形态                    | 主要用途                                                  |
-| ------------------------------------------------------------- | ----------------------- | --------------------------------------------------------- |
-| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 开源 Harness / Preview | 插件化 Agent 运行时、轨迹、模式与二次开发                 |
-| [OpenHands SDK](https://docs.openhands.dev/sdk/index)         | 开源 SDK / Runtime      | 构建能读写代码、运行 Shell、浏览网页的软件 Agent          |
-| [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent)            | 开源框架                | Function Calling、MCP、代码解释器、RAG 与 Browser Assistant |
-| [AgentScope](https://github.com/agentscope-ai/agentscope)     | 开源多 Agent 框架       | Agent 应用、多 Agent 编排与运行时                          |
-| [LangGraph](https://langchain-ai.github.io/langgraph/)        | 开源工作流 / Runtime    | 有状态、可恢复、可人工介入的 Agent 图工作流                |
-| [Microsoft AutoGen](https://microsoft.github.io/autogen/)     | 开源多 Agent 框架       | Agent、工具和多 Agent 对话 / 编排                          |
-| [CrewAI](https://www.crewai.com/open-source)                  | 开源框架与平台          | 角色化 Agent 团队与流程自动化                              |
-| [Dify](https://dify.ai/)                                      | 开源应用平台            | 可视化工作流、知识库、模型接入、Agent 与应用发布           |
-| [Coze](https://www.coze.cn/)                                  | 托管平台                | Bot、Workflow、插件、知识库和多模态应用                    |
-| [n8n](https://n8n.io/)                                        | 工作流自动化平台        | 将 LLM / Agent 节点与 SaaS、数据库和企业流程连接           |
+| 项目 / 平台                                                         | 形态                    | 主要用途                                                    |
+| ------------------------------------------------------------------- | ----------------------- | ----------------------------------------------------------- |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 开源 Harness / Preview  | 插件化 Agent 运行时、轨迹、模式与二次开发                   |
+| [OpenHands SDK](https://docs.openhands.dev/sdk/index)               | 开源 SDK / Runtime      | 构建能读写代码、运行 Shell、浏览网页的软件 Agent            |
+| [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent)                  | 开源框架                | Function Calling、MCP、代码解释器、RAG 与 Browser Assistant |
+| [AgentScope](https://github.com/agentscope-ai/agentscope)           | 开源多 Agent 框架       | Agent 应用、多 Agent 编排与运行时                           |
+| [LangGraph](https://langchain-ai.github.io/langgraph/)              | 开源工作流 / Runtime    | 有状态、可恢复、可人工介入的 Agent 图工作流                 |
+| [Microsoft AutoGen](https://microsoft.github.io/autogen/)           | 开源多 Agent 框架       | Agent、工具和多 Agent 对话 / 编排                           |
+| [CrewAI](https://www.crewai.com/open-source)                        | 开源框架与平台          | 角色化 Agent 团队与流程自动化                               |
+| [Dify](https://dify.ai/)                                            | 开源应用平台            | 可视化工作流、知识库、模型接入、Agent 与应用发布            |
+| [Coze](https://www.coze.cn/)                                        | 托管平台                | Bot、Workflow、插件、知识库和多模态应用                     |
+| [n8n](https://n8n.io/)                                              | 工作流自动化平台        | 将 LLM / Agent 节点与 SaaS、数据库和企业流程连接            |
 
 如果目标是“直接完成个人工作”，优先看 Work / Personal Agent；如果目标是“开发和运营自己的 Agent”，再重点比较本节的平台、SDK、部署和可观测性。
 
@@ -340,13 +341,13 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 
 ### 先区分五种付费方式
 
-| 类型         | 买到的是什么                                            | 常见限制                                   | 例子                                              |
-| ------------ | ------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------- |
-| 产品席位订阅 | 某个 App / IDE / Agent 的使用权                         | 请求数、Agent 次数、并发和高级模型         | ChatGPT、Claude、Cursor、Windsurf、GitHub Copilot |
-| 会员内 Coding 权益 | Chat 会员附带的官方 Coding Agent / Key             | 共享会员额度、指定客户端、滚动窗口         | Claude Code、Kimi Code                            |
-| Coding Plan  | 指定编程工具可用的固定月费模型额度                      | 工具白名单、滚动窗口、模型白名单、公平使用 | GLM Coding Plan、百炼 Coding Plan                 |
-| Token Plan   | 面向 Coding、OpenClaw 等 Agent 的打包 Token / Credit    | 专用 Key、场景限制、调度优先级             | 腾讯云 Token Plan、MiniMax Token Plan             |
-| 按量 API     | 按实际输入、输出、缓存和工具用量计费                    | 余额、速率、区域和模型可用性               | OpenAI API、Anthropic API、DeepSeek API           |
+| 类型               | 买到的是什么                                            | 常见限制                                   | 例子                                              |
+| ------------------ | ------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------- |
+| 产品席位订阅       | 某个 App / IDE / Agent 的使用权                         | 请求数、Agent 次数、并发和高级模型         | ChatGPT、Claude、Cursor、Windsurf、GitHub Copilot |
+| 会员内 Coding 权益 | Chat 会员附带的官方 Coding Agent / Key                  | 共享会员额度、指定客户端、滚动窗口         | Claude Code、Kimi Code                            |
+| Coding Plan        | 指定编程工具可用的固定月费模型额度                      | 工具白名单、滚动窗口、模型白名单、公平使用 | GLM Coding Plan、百炼 Coding Plan                 |
+| Token Plan         | 面向 Coding、OpenClaw 等 Agent 的打包 Token / Credit    | 专用 Key、场景限制、调度优先级             | 腾讯云 Token Plan、MiniMax Token Plan             |
+| 按量 API           | 按实际输入、输出、缓存和工具用量计费                    | 余额、速率、区域和模型可用性               | OpenAI API、Anthropic API、DeepSeek API           |
 
 > [!WARNING]
 > 产品会员通常不等于通用 API 额度；Coding Plan 的 Key 也通常不能用于自建后端、批量任务或任意 API 调用。接入前必须核对允许的客户端、端点、模型白名单、上下文上限、数据条款和公平使用规则。
@@ -355,14 +356,14 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 
 | 方案                                 | 提供方      | 类型与特点                                                             | 官方信息                                                                 |
 | ------------------------------------ | ----------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| GLM Coding Plan                      | 智谱        | 官方 Coding Agent 订阅，使用 GLM 系列；新 Token Plan 档位开放购买 | [快速开始](https://docs.bigmodel.cn/cn/coding-plan/quick-start)          |
-| 百炼 Coding Plan                     | 阿里云      | 多模型、专用 Key 与 Endpoint，Coding / Token 多档，兼容多种 Agent  | [官方文档](https://help.aliyun.com/zh/model-studio/coding-plan)          |
+| GLM Coding Plan                      | 智谱        | 官方 Coding Agent 订阅，使用 GLM 系列；新 Token Plan 档位开放购买      | [快速开始](https://docs.bigmodel.cn/cn/coding-plan/quick-start)          |
+| 百炼 Coding Plan                     | 阿里云      | 多模型、专用 Key 与 Endpoint，Coding / Token 多档，兼容多种 Agent      | [官方文档](https://help.aliyun.com/zh/model-studio/coding-plan)          |
 | 腾讯云 Token Plan                    | 腾讯云      | 通用与混元系列套餐，面向编码及 OpenClaw 类工具                         | [产品页](https://cloud.tencent.cn/act/pro/tokenplan)                     |
 | 火山方舟 Coding Plan / Agent Plan    | 火山引擎    | 面向主流编程工具和 Agent 的订阅额度，模型池覆盖多家主流模型            | [官方文档](https://www.volcengine.com/docs/82379/2165245)                |
-| 百度千帆 Coding Plan / Token Plan    | 百度智能云  | 多模型编码订阅与更通用的 Token 量包                                   | [千帆平台](https://cloud.baidu.com/product/codingplan.html)              |
-| Kimi Code                            | 月之暗面    | 会员或 Coding 订阅内的 CLI、VS Code 和兼容 API Key；会员需预约     | [官方文档](https://www.kimi.com/code/docs/en/)                           |
-| MiniMax Token Plan                   | MiniMax     | Plus / Max / Ultra 三档公开，不限购，全模态额度共享               | [订阅页](https://platform.minimax.io/subscribe/coding-plan)              |
-| 小米 MiMo Token Plan                 | 小米        | Lite / Standard / Pro / Max 四档，无 5 小时硬限                       | [小米 MiMo](https://mimo.xiaomi.com/)                                    |
+| 百度千帆 Coding Plan / Token Plan    | 百度智能云  | 多模型编码订阅与更通用的 Token 量包                                    | [千帆平台](https://cloud.baidu.com/product/codingplan.html)              |
+| Kimi Code                            | 月之暗面    | 会员或 Coding 订阅内的 CLI、VS Code 和兼容 API Key；会员需预约         | [官方文档](https://www.kimi.com/code/docs/en/)                           |
+| MiniMax Token Plan                   | MiniMax     | Plus / Max / Ultra 三档公开，不限购，全模态额度共享                    | [订阅页](https://platform.minimax.io/subscribe/coding-plan)              |
+| 小米 MiMo Token Plan                 | 小米        | Lite / Standard / Pro / Max 四档，无 5 小时硬限                        | [小米 MiMo](https://mimo.xiaomi.com/)                                    |
 | Qwen / QwenCloud 相关 Plan           | Qwen / 阿里 | Qwen 生态的 Coding / Token 类订阅；名称与套餐随地区和阶段变化          | [Qwen Code](https://qwenlm.github.io/qwen-code-docs/)                    |
 | DeepSeek API                         | DeepSeek    | 主要为按量 API；可用于官方 Harness 或兼容工具                          | [API 文档](https://api-docs.deepseek.com/)                               |
 | OpenAI 官方 API                      | OpenAI      | 通用按量 API，与产品席位和 Chat 会员分开                               | [OpenAI API](https://developers.openai.com/api/)                         |
@@ -370,8 +371,8 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 | xAI 官方 API                         | xAI         | 通用按量 API，与产品席位和 Chat 会员分开                               | [xAI API](https://docs.x.ai/)                                            |
 | Codex 会员额度                       | OpenAI      | ChatGPT 订阅附带的 Coding Agent 额度，按周额度管理                     | [定价页](https://openai.com/chatgpt/pricing/)                            |
 | Claude Code 会员额度                 | Anthropic   | Pro / Max 订阅附带的 Coding Agent 额度，按滚动窗口管理                 | [定价页](https://www.anthropic.com/pricing)                              |
-| OpenCode Zen / OpenCode Go           | OpenCode    | 精选模型网关与订阅套餐，Go 档聚合多家主流模型，兼容多种编程工具     | [Zen 文档](https://opencode.ai/docs/zen/)                                |
-| Ollama Cloud Plan                    | Ollama      | 云端开源模型订阅，聚合各家开源模型，按云资源用量计量                     | [Ollama Cloud](https://ollama.com/cloud)                                 |
+| OpenCode Zen / OpenCode Go           | OpenCode    | 精选模型网关与订阅套餐，Go 档聚合多家主流模型，兼容多种编程工具        | [Zen 文档](https://opencode.ai/docs/zen/)                                |
+| Ollama Cloud Plan                    | Ollama      | 云端开源模型订阅，聚合各家开源模型，按云资源用量计量                   | [Ollama Cloud](https://ollama.com/cloud)                                 |
 
 ### 兼容性不是只有“能填 Base URL”
 
@@ -394,8 +395,8 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 
 | 工具                                                                          | 内容                                             | 使用提示                                           |
 | ----------------------------------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------- |
-| [AI Coding Plan 平台评测与对比](https://vibecoding.dreamfree.space/)          | Coding Plan 平台横评、模型基准与选型文章          | 第三方社区工具，数据和结论请以官方来源交叉核对   |
-| [awesome-coding-plan](https://github.com/mahonzhan/awesome-coding-plan)       | 各厂家 Coding Plan 实际价值对比                  | 第三方社区整理，套餐与价格请以官方页面核对       |
+| [AI Coding Plan 平台评测与对比](https://vibecoding.dreamfree.space/)          | Coding Plan 平台横评、模型基准与选型文章         | 第三方社区工具，数据和结论请以官方来源交叉核对     |
+| [awesome-coding-plan](https://github.com/mahonzhan/awesome-coding-plan)       | 各厂家 Coding Plan 实际价值对比                  | 第三方社区整理，套餐与价格请以官方页面核对         |
 
 以上为社区整理的第三方对比参考，不属于官方信息；套餐、价格和模型列表变化很快，使用前请回到各厂商官方页面核对。
 
@@ -405,18 +406,18 @@ API Router、Inference Provider 和云模型市场提供统一接口、模型目
 
 ### 全球多模型与推理平台
 
-| 平台                                                        | 覆盖与特点                                               | 更接近哪一层                 |
-| ----------------------------------------------------------- | -------------------------------------------------------- | ---------------------------- |
-| [OpenRouter](https://openrouter.ai/)                        | 多模型统一 API、供应商路由、回退和统一账单              | Router / Marketplace         |
-| [Together AI](https://docs.together.ai/docs/inference/overview) | 大量开放模型，Serverless 与 Dedicated Endpoint       | Inference Provider           |
-| [Fireworks AI](https://fireworks.ai/inference)              | 优化推理、Serverless / Dedicated、OpenAI / Anthropic 兼容 | Inference Provider         |
-| [GroqCloud](https://console.groq.com/docs/overview)          | 低延迟推理平台与兼容 API                                | Inference Provider           |
-| [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers/main/en/index) | 一个 HF Token 接入多家推理提供商 | Router / Provider Aggregator |
-| [Replicate](https://replicate.com/docs/topics/models/run-a-model/) | 通过 Web 或 API 运行文本、图像、音视频等模型       | Model Hosting / API          |
-| [Baseten](https://docs.baseten.co/)                         | 专用模型部署、推理与生产基础设施                         | Model Serving                |
-| [AWS Bedrock](https://docs.aws.amazon.com/bedrock/)         | 多厂商基础模型、AWS 原生安全与企业服务                  | Hyperscaler Model Platform   |
-| [Google Vertex AI Model Garden](https://cloud.google.com/vertex-ai/generative-ai/docs/model-garden/explore-models) | Google 与第三方模型目录、部署和治理 | Hyperscaler Model Platform |
-| [Microsoft Foundry Models](https://azure.microsoft.com/en-us/products/ai-foundry/models/) | 多厂商模型目录、API、部署与企业治理 | Hyperscaler Model Platform |
+| 平台                                                                                                               | 覆盖与特点                                                | 更接近哪一层                 |
+| ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- | ---------------------------- |
+| [OpenRouter](https://openrouter.ai/)                                                                               | 多模型统一 API、供应商路由、回退和统一账单                | Router / Marketplace         |
+| [Together AI](https://docs.together.ai/docs/inference/overview)                                                    | 大量开放模型，Serverless 与 Dedicated Endpoint            | Inference Provider           |
+| [Fireworks AI](https://fireworks.ai/inference)                                                                     | 优化推理、Serverless / Dedicated、OpenAI / Anthropic 兼容 | Inference Provider           |
+| [GroqCloud](https://console.groq.com/docs/overview)                                                                | 低延迟推理平台与兼容 API                                  | Inference Provider           |
+| [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers/main/en/index)                  | 一个 HF Token 接入多家推理提供商                          | Router / Provider Aggregator |
+| [Replicate](https://replicate.com/docs/topics/models/run-a-model/)                                                 | 通过 Web 或 API 运行文本、图像、音视频等模型              | Model Hosting / API          |
+| [Baseten](https://docs.baseten.co/)                                                                                | 专用模型部署、推理与生产基础设施                          | Model Serving                |
+| [AWS Bedrock](https://docs.aws.amazon.com/bedrock/)                                                                | 多厂商基础模型、AWS 原生安全与企业服务                    | Hyperscaler Model Platform   |
+| [Google Vertex AI Model Garden](https://cloud.google.com/vertex-ai/generative-ai/docs/model-garden/explore-models) | Google 与第三方模型目录、部署和治理                       | Hyperscaler Model Platform   |
+| [Microsoft Foundry Models](https://azure.microsoft.com/en-us/products/ai-foundry/models/)                          | 多厂商模型目录、API、部署与企业治理                       | Hyperscaler Model Platform   |
 
 ### 国内模型平台与聚合服务
 
@@ -428,8 +429,8 @@ API Router、Inference Provider 和云模型市场提供统一接口、模型目
 | [腾讯云 TokenHub](https://cloud.tencent.cn/product/tokenhub)      | 多模型 Token、推理与 Agent 工具适配             | Coding / 通用套餐差异、调度与兼容协议  |
 | [百度智能云千帆](https://cloud.baidu.com/doc/qianfan/index.html)  | 文心及多模型平台、Agent 开发与企业服务          | 区域、模型映射、配额和接口差异         |
 | [魔搭 ModelScope](https://modelscope.cn/)                         | 模型社区、在线推理、开发和部署生态              | 社区模型许可、托管限制和生产 SLA       |
-| [共绩算力](https://suanli.cn/)                                  | Serverless GPU 推理，提供主流模型按量通道          | 与官方价差、限流、服务稳定性与数据条款 |
-| [优云智算](https://www.compshare.cn/)                           | GLM、DeepSeek 等主流模型 Coding Plan，倍率公开   | 套餐档位、倍率折算和并发限流           |
+| [共绩算力](https://suanli.cn/)                                    | Serverless GPU 推理，提供主流模型按量通道       | 与官方价差、限流、服务稳定性与数据条款 |
+| [优云智算](https://www.compshare.cn/)                             | GLM、DeepSeek 等主流模型 Coding Plan，倍率公开  | 套餐档位、倍率折算和并发限流           |
 
 ### 官方平台与非官方中转站
 
@@ -447,22 +448,22 @@ API Router、Inference Provider 和云模型市场提供统一接口、模型目
 
 Chat 产品、基础模型 / API 和 Agent 产品是三个不同层次。Chat 可能内置 Agent；一个 Agent 也可能允许切换多个模型。
 
-| 体系       | 基础模型 / API                                                    | 面向用户的 Chat 或入口                       | 相关 Agent 产品                             |
-| ---------- | ----------------------------------------------------------------- | -------------------------------------------- | ------------------------------------------- |
-| OpenAI     | [GPT / OpenAI API](https://developers.openai.com/api/)            | [ChatGPT](https://chatgpt.com/)              | Codex、ChatGPT agent                        |
-| Anthropic  | [Claude API](https://docs.anthropic.com/)                         | [Claude](https://claude.ai/)                 | Claude Code、Claude Cowork、Computer Use    |
-| Google     | [Gemini API](https://ai.google.dev/)                              | [Gemini](https://gemini.google.com/)         | Antigravity、Gemini CLI、Jules              |
-| xAI        | [Grok API](https://docs.x.ai/)                                    | [Grok](https://grok.com/)                    | Grok Build                                  |
-| Meta       | [Llama](https://www.llama.com/) · [Muse](https://ai.meta.com/)    | Meta AI                                      | Muse Code                                   |
-| Mistral AI | [Mistral API](https://docs.mistral.ai/)                           | [Le Chat](https://chat.mistral.ai/)          | 可接多模型 Harness                          |
-| DeepSeek   | [DeepSeek API](https://api-docs.deepseek.com/)                    | [DeepSeek Chat](https://chat.deepseek.com/)  | DeepSeek Harness                            |
-| 阿里 / Qwen | [Qwen / Model Studio](https://www.aliyun.com/product/bailian)    | [Qwen Chat](https://chat.qwen.ai/)           | Qwen Code、Qwen-Agent、QwenPaw、Qoder       |
-| 智谱       | [GLM API](https://docs.bigmodel.cn/)                              | [智谱清言 / Z.ai](https://chat.z.ai/)        | ZCode、AutoGLM、AutoClaw                    |
-| 月之暗面   | [Kimi API](https://platform.moonshot.cn/)                         | [Kimi](https://www.kimi.com/)                | Kimi Code、Kimi Work、WebBridge             |
-| MiniMax    | [MiniMax API](https://platform.minimaxi.com/)                     | [MiniMax](https://www.minimaxi.com/)         | MiniMax Code、Token Plan                    |
-| 字节跳动   | [豆包 / Seed / 方舟](https://www.volcengine.com/product/doubao)   | [豆包](https://www.doubao.com/)              | TRAE、TRAE Work、UI-TARS 生态               |
-| 腾讯       | [混元](https://cloud.tencent.com/product/hunyuan)                 | [腾讯元宝](https://yuanbao.tencent.com/)     | CodeBuddy、WorkBuddy、QClaw、Marvis         |
-| 百度       | [文心 / 千帆](https://cloud.baidu.com/doc/qianfan/index.html)    | [文心一言](https://yiyan.baidu.com/)         | Comate、Zulu、千帆 Agent 平台               |
+| 体系        | 基础模型 / API                                                    | 面向用户的 Chat 或入口                       | 相关 Agent 产品                             |
+| ----------- | ----------------------------------------------------------------- | -------------------------------------------- | ------------------------------------------- |
+| OpenAI      | [GPT / OpenAI API](https://developers.openai.com/api/)            | [ChatGPT](https://chatgpt.com/)              | Codex、ChatGPT agent                        |
+| Anthropic   | [Claude API](https://docs.anthropic.com/)                         | [Claude](https://claude.ai/)                 | Claude Code、Claude Cowork、Computer Use    |
+| Google      | [Gemini API](https://ai.google.dev/)                              | [Gemini](https://gemini.google.com/)         | Antigravity、Gemini CLI、Jules              |
+| xAI         | [Grok API](https://docs.x.ai/)                                    | [Grok](https://grok.com/)                    | Grok Build                                  |
+| Meta        | [Llama](https://www.llama.com/) · [Muse](https://ai.meta.com/)    | Meta AI                                      | Muse Code                                   |
+| Mistral AI  | [Mistral API](https://docs.mistral.ai/)                           | [Le Chat](https://chat.mistral.ai/)          | 可接多模型 Harness                          |
+| DeepSeek    | [DeepSeek API](https://api-docs.deepseek.com/)                    | [DeepSeek Chat](https://chat.deepseek.com/)  | DeepSeek Harness                            |
+| 阿里 / Qwen | [Qwen / Model Studio](https://www.aliyun.com/product/bailian)     | [Qwen Chat](https://chat.qwen.ai/)           | Qwen Code、Qwen-Agent、QwenPaw、Qoder       |
+| 智谱        | [GLM API](https://docs.bigmodel.cn/)                              | [智谱清言 / Z.ai](https://chat.z.ai/)        | ZCode、AutoGLM、AutoClaw                    |
+| 月之暗面    | [Kimi API](https://platform.moonshot.cn/)                         | [Kimi](https://www.kimi.com/)                | Kimi Code、Kimi Work、WebBridge             |
+| MiniMax     | [MiniMax API](https://platform.minimaxi.com/)                     | [MiniMax](https://www.minimaxi.com/)         | MiniMax Code、Token Plan                    |
+| 字节跳动    | [豆包 / Seed / 方舟](https://www.volcengine.com/product/doubao)   | [豆包](https://www.doubao.com/)              | TRAE、TRAE Work、UI-TARS 生态               |
+| 腾讯        | [混元](https://cloud.tencent.com/product/hunyuan)                 | [腾讯元宝](https://yuanbao.tencent.com/)     | CodeBuddy、WorkBuddy、QClaw、Marvis         |
+| 百度        | [文心 / 千帆](https://cloud.baidu.com/doc/qianfan/index.html)     | [文心一言](https://yiyan.baidu.com/)         | Comate、Zulu、千帆 Agent 平台               |
 
 上表表示同一厂商或生态中的主要关系，不表示某个 Agent 永远只使用自家模型。例如 OpenCode、Cline、Kilo、Aider、Goose、OpenHands 和多个 Work Agent 都可以在一定范围内接入不同模型或 Router。
 
