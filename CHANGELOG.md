@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-08-19
+
 ### Added
 
 - Added Cursor Origin (agent-native code hosting with repos, PRs, and GitHub sync; early beta) to the repository-native agent table.
@@ -19,6 +21,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Simplified product naming across tables and removed the disproportionate DeepSeek Harness standalone section.
 - Enriched the plan table based on a third-party Coding Plan comparison: added Xiaomi MiMo Token Plan, Codex, and Claude Code quota rows, and refreshed tier and availability notes for Zhipu, Model Studio, Ark, Kimi, MiniMax, OpenCode, and Ollama.
 - Updated the last-verified badge to 2026-08-19 and re-aligned all README table padding to consistent CJK-aware display widths.
+- Added third-party Coding Plan comparison references, moved CC.SWITCH into the plan compatibility notes as a config-switching tool, added 共绩算力 and 优云智算 to domestic platforms, and renamed platform entries (硅基流动 SiliconFlow, 阿里云百炼, 腾讯云).
 
 ## [0.1.0] - 2026-08-15
 
@@ -30,5 +33,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Separate maps for Coding Plan, Token Plan, API routers, foundation models, and chat products.
 - Clarifications for cross-category product families and the distinction between models, harnesses, surfaces, and plans.
 
-[Unreleased]: https://github.com/yuzhounh/ai-agent-landscape/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/yuzhounh/ai-agent-landscape/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/yuzhounh/ai-agent-landscape/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/yuzhounh/ai-agent-landscape/releases/tag/v0.1.0

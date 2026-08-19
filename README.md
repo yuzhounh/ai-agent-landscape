@@ -7,7 +7,7 @@
 <p align="center"><strong>AI Agent 产品、运行形态、模型与用量方案的中文生态地图</strong></p>
 
 <p align="center">
-  <a href="https://github.com/yuzhounh/ai-agent-landscape/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/version-v0.1.0-blue.svg" alt="Version v0.1.0" /></a>
+  <a href="https://github.com/yuzhounh/ai-agent-landscape/releases/tag/v0.2.0"><img src="https://img.shields.io/badge/version-v0.2.0-blue.svg" alt="Version v0.2.0" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" /></a>
   <a href="#信息时效与声明"><img src="https://img.shields.io/badge/last_verified-2026--08--19-2ea44f.svg" alt="Last verified 2026-08-19" /></a>
 </p>
@@ -516,7 +516,7 @@ Chat 产品、基础模型 / API 和 Agent 产品是三个不同层次。Chat �
 
 ## 信息时效与声明
 
-- 当前版本：**v0.1.0**
+- 当前版本：**v0.2.0**
 - 最近系统核验：**2026-08-19**
 - 本仓库是独立的社区整理项目，与文中任何厂商均无隶属、授权、赞助或背书关系。
 - 产品名称与商标归各自权利人所有；链接优先指向官方来源。
