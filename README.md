@@ -351,7 +351,7 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 > [!WARNING]
 > 产品会员通常不等于通用 API 额度；Coding Plan 的 Key 也通常不能用于自建后端、批量任务或任意 API 调用。接入前必须核对允许的客户端、端点、模型白名单、上下文上限、数据条款和公平使用规则。
 
-### 国内与模型厂商代表方案
+### 模型厂商代表方案
 
 | 方案                                 | 提供方      | 类型与特点                                                             | 官方信息                                                                 |
 | ------------------------------------ | ----------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
@@ -364,7 +364,11 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 | MiniMax Token Plan                   | MiniMax     | MiniMax Code 与可供兼容工具使用的 Token Plan                           | [订阅页](https://platform.minimax.io/subscribe/coding-plan)              |
 | Qwen / QwenCloud 相关 Plan           | Qwen / 阿里 | Qwen 生态的 Coding / Token 类订阅；名称与套餐随地区和阶段变化          | [Qwen Code](https://qwenlm.github.io/qwen-code-docs/)                    |
 | DeepSeek API                         | DeepSeek    | 主要为按量 API；可用于官方 Harness 或兼容工具                          | [API 文档](https://api-docs.deepseek.com/)                               |
-| OpenAI / Anthropic / xAI 官方 API    | 各模型厂商  | 通用按量 API，与产品席位和 Chat 会员分开                               | [OpenAI API](https://developers.openai.com/api/) · [Claude API](https://docs.anthropic.com/) · [xAI API](https://docs.x.ai/) |
+| OpenAI 官方 API                      | OpenAI      | 通用按量 API，与产品席位和 Chat 会员分开                               | [OpenAI API](https://developers.openai.com/api/)                         |
+| Anthropic 官方 API                   | Anthropic   | 通用按量 API，与产品席位和 Chat 会员分开                               | [Claude API](https://docs.anthropic.com/)                                |
+| xAI 官方 API                         | xAI         | 通用按量 API，与产品席位和 Chat 会员分开                               | [xAI API](https://docs.x.ai/)                                            |
+| OpenCode Zen / OpenCode Go           | OpenCode    | 精选模型网关与低价订阅套餐，兼容 OpenAI / Anthropic 协议与多种编程工具 | [Zen 文档](https://opencode.ai/docs/zen/)                                |
+| Ollama Cloud Plan                    | Ollama      | 云端开源模型订阅，按云资源用量计量，API 与本地 Ollama 保持一致         | [Ollama Cloud](https://ollama.com/cloud)                                 |
 
 ### 兼容性不是只有“能填 Base URL”
 
@@ -409,7 +413,7 @@ API Router、Inference Provider 和云模型市场提供统一接口、模型目
 | [火山引擎方舟](https://www.volcengine.com/product/ark)            | 豆包与多模型服务、推理和 Agent 工具链           | Endpoint、上下文、并发与套餐边界       |
 | [腾讯云 TokenHub](https://cloud.tencent.cn/product/tokenhub)      | 多模型 Token、推理与 Agent 工具适配             | Coding / 通用套餐差异、调度与兼容协议  |
 | [百度智能云千帆](https://cloud.baidu.com/doc/qianfan/index.html)  | 文心及多模型平台、Agent 开发与企业服务          | 区域、模型映射、配额和接口差异         |
-| [ModelScope 魔搭](https://modelscope.cn/)                         | 模型社区、在线推理、开发和部署生态              | 社区模型许可、托管限制和生产 SLA       |
+| [魔搭 ModelScope](https://modelscope.cn/)                         | 模型社区、在线推理、开发和部署生态              | 社区模型许可、托管限制和生产 SLA       |
 
 ### 官方平台与非官方中转站
 
