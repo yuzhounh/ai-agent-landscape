@@ -2,13 +2,15 @@
   <img src="assets/icon.svg" alt="AI Agent Landscape logo" width="128">
 </p>
 
-# AI Agent Landscape
+<h1 align="center">AI Agent Landscape</h1>
 
-> AI Agent 产品、运行形态、模型与用量方案的中文生态地图
+<p align="center"><strong>AI Agent 产品、运行形态、模型与用量方案的中文生态地图</strong></p>
 
-[![Version](https://img.shields.io/badge/version-v0.1.0-blue.svg)](https://github.com/yuzhounh/ai-agent-landscape/releases/tag/v0.1.0)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Last verified](https://img.shields.io/badge/last_verified-2026--08--15-2ea44f.svg)](#信息时效与声明)
+<p align="center">
+  <a href="https://github.com/yuzhounh/ai-agent-landscape/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/version-v0.1.0-blue.svg" alt="Version v0.1.0" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" /></a>
+  <a href="#信息时效与声明"><img src="https://img.shields.io/badge/last_verified-2026--08--15-2ea44f.svg" alt="Last verified 2026-08-15" /></a>
+</p>
 
 AI Agent 已经不再只是聊天框或代码补全插件。一个完整的 Agent 产品，通常由模型、上下文工程、工具、执行环境、权限系统和交付界面共同组成，可以理解需求、拆解任务、调用工具、修改文件、运行代码，并在一定程度上持续工作直至交付结果。
 
