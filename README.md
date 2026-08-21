@@ -424,24 +424,26 @@ API Router、Inference Provider 和云模型市场提供统一接口、模型目
 
 ### 国内模型平台与聚合服务
 
-| 平台                                                              | 覆盖与特点                                      | 使用前重点检查                         |
-| ----------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------- |
-| [硅基流动 SiliconFlow](https://siliconflow.cn/)                   | 国内外开源与商业模型 API、统一推理平台          | 模型版本、地域、速率、数据和发票       |
-| [阿里云百炼](https://www.aliyun.com/product/bailian)              | Qwen 及第三方模型、Agent / 应用构建和云能力     | 地域端点、不同产品线 Key、模型白名单   |
-| [火山引擎方舟](https://www.volcengine.com/product/ark)            | 豆包与多模型服务、推理和 Agent 工具链           | Endpoint、上下文、并发与套餐边界       |
-| [腾讯云](https://cloud.tencent.cn/product/tokenhub)               | 多模型 Token、推理与 Agent 工具适配             | Coding / 通用套餐差异、调度与兼容协议  |
-| [百度智能云千帆](https://cloud.baidu.com/doc/qianfan/index.html)  | 文心及多模型平台、Agent 开发与企业服务          | 区域、模型映射、配额和接口差异         |
-| [魔搭 ModelScope](https://modelscope.cn/)                         | 模型社区、在线推理、开发和部署生态              | 社区模型许可、托管限制和生产 SLA       |
-| [共绩算力](https://suanli.cn/)                                    | Serverless GPU 推理按量，支持 Kimi-K3、GLM-5.3  | 与官方价差、限流、服务稳定性与数据条款 |
-| [优云智算](https://www.compshare.cn/)                             | GLM-5.2、DeepSeek-V4-Flash 全档支持，倍率透明   | 套餐档位、倍率折算和并发限流           |
-| [华为云](https://www.huaweicloud.com/)                            | Coding Plan 定时放量，覆盖 GLM、Kimi、DeepSeek  | 模型更新节奏、放量时间与额度           |
-| [京东云](https://www.jdcloud.com/)                                | Coding Plan 定时放量，接入 Kimi、GLM、DeepSeek  | 模型新旧与额度证据                     |
-| [讯飞星火](https://xinghuo.xfyun.cn/)                             | 低价套餐已下架，仅剩高效版与速通版              | 限购、高峰拥挤与套餐条件               |
-| [联通云](https://www.cucloud.cn/)                                 | Coding Plan 已下线，仅剩 Token Plan             | 模型覆盖与额度证据                     |
-| [移动云](https://ecloud.10086.cn/)                                | 以 MiniMax 系列模型为主，旗舰模型覆盖有限       | 模型覆盖与用量证据                     |
-| [阶跃星辰](https://www.stepfun.com/)                              | step 系列自研模型与 step-router 聚合入口        | 第三方模型覆盖与定价                   |
-| [商汤日日新](https://www.sensetime.com/cn)                        | SenseNova 自研与 DeepSeek-V4-Flash，仅免费会员  | 编程向模型选择与额度政策               |
-| [摩尔线程](https://www.mthreads.com/)                             | 以 GLM-4.7 为主，免费会员、定时放量             | 模型覆盖与放量安排                     |
+| 平台                                                              | 覆盖与特点                                                                                        | 使用前重点检查                         |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| [硅基流动 SiliconFlow](https://siliconflow.cn/)                   | 国内外开源与商业模型 API、统一推理平台                                                            | 模型版本、地域、速率、数据和发票       |
+| [阿里云百炼](https://www.aliyun.com/product/bailian)              | Qwen 及第三方模型、Agent / 应用构建和云能力                                                       | 地域端点、不同产品线 Key、模型白名单   |
+| [火山引擎方舟](https://www.volcengine.com/product/ark)            | 豆包与多模型服务、推理和 Agent 工具链                                                             | Endpoint、上下文、并发与套餐边界       |
+| [腾讯云](https://cloud.tencent.cn/product/tokenhub)               | 多模型 Token、推理与 Agent 工具适配                                                               | Coding / 通用套餐差异、调度与兼容协议  |
+| [百度智能云千帆](https://cloud.baidu.com/doc/qianfan/index.html)  | 文心及多模型平台、Agent 开发与企业服务                                                            | 区域、模型映射、配额和接口差异         |
+| [魔搭 ModelScope](https://modelscope.cn/)                         | 模型社区、在线推理、开发和部署生态                                                                | 社区模型许可、托管限制和生产 SLA       |
+| [共绩算力](https://suanli.cn/)                                    | Serverless GPU 推理按量，支持 Kimi-K3、GLM-5.3                                                    | 与官方价差、限流、服务稳定性与数据条款 |
+| [优云智算](https://www.compshare.cn/)                             | GLM-5.2、DeepSeek-V4-Flash 全档支持，倍率透明                                                     | 套餐档位、倍率折算和并发限流           |
+| [超算互联网 SCNet](https://www.scnet.cn/)                         | Token Plan 在售，月度 Credits 包月，集成 GLM、DeepSeek、Kimi、MiniMax、Qwen；Coding Plan 暂时售罄 | 套餐档位、Credits 抵扣规则与退款条款   |
+| [TaoToken](https://taotoken.net/)                                 | 主流大模型直连按量通道；GLM-5.2 Coding Plan 限时限量抢购                                          | 与官方价差、渠道稳定性与数据条款       |
+| [华为云](https://www.huaweicloud.com/)                            | Coding Plan 定时放量，覆盖 GLM、Kimi、DeepSeek                                                    | 模型更新节奏、放量时间与额度           |
+| [京东云](https://www.jdcloud.com/)                                | Coding Plan 定时放量，接入 Kimi、GLM、DeepSeek                                                    | 模型新旧与额度证据                     |
+| [讯飞星火](https://xinghuo.xfyun.cn/)                             | 低价套餐已下架，仅剩高效版与速通版                                                                | 限购、高峰拥挤与套餐条件               |
+| [联通云](https://www.cucloud.cn/)                                 | Coding Plan 已下线，仅剩 Token Plan                                                               | 模型覆盖与额度证据                     |
+| [移动云](https://ecloud.10086.cn/)                                | 以 MiniMax 系列模型为主，旗舰模型覆盖有限                                                         | 模型覆盖与用量证据                     |
+| [阶跃星辰](https://www.stepfun.com/)                              | step 系列自研模型与 step-router 聚合入口                                                          | 第三方模型覆盖与定价                   |
+| [商汤日日新](https://www.sensetime.com/cn)                        | SenseNova 自研与 DeepSeek-V4-Flash，仅免费会员                                                    | 编程向模型选择与额度政策               |
+| [摩尔线程](https://www.mthreads.com/)                             | 以 GLM-4.7 为主，免费会员、定时放量                                                               | 模型覆盖与放量安排                     |
 
 ### 官方平台与非官方中转站
 
