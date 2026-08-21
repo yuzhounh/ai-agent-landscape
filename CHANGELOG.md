@@ -6,8 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Added
+
+- Added NVIDIA NIM free tier (100+ open models, low rate limit, no SLA) to the vendor plan table.
+
 ### Changed
 
+- Enriched the plan table from the awesome-coding-plan value comparison: tier names and quota mechanics for Zhipu, Kimi, MiMo, Codex and Claude Code memberships, DeepSeek API characteristics, Bailian Lite discontinuation, Ark daily limited stock, and OpenCode Go / Ollama model coverage; noted IDE/plugin plan billing models (usage-based vs quota-based) and the Gemini CLI / Code Assist subscription entry change; added free-tier and subscription notes for OpenRouter and Fireworks AI.
 - Refreshed the plan table and domestic platform table from the 2026-08-16 third-party comparison: updated purchase availability and model coverage for Zhipu, Model Studio, Tencent Cloud, Ark, Qianfan, Kimi, MiniMax, DeepSeek, Codex, Claude Code, OpenCode, and Ollama; added Huawei Cloud, JD Cloud, iFlytek Spark, China Unicom Cloud, China Mobile Cloud, StepFun, SenseTime SenseNova, and Moore Threads to domestic platforms.
 
 ## [0.2.0] - 2026-08-19

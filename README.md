@@ -159,6 +159,8 @@ flowchart TB
 
 独立 IDE、IDE 扩展和通过 ACP 接入编辑器的外部 Agent 并不是同一种交付方式。评估时应分别检查编辑器兼容性、代码索引位置、扩展权限和 Agent 实际执行环境。
 
+IDE / 插件类订阅的计费形态大致分两类：**用量型**（每月包含一定 API / Credits 额度，超额按量）与**配额型**（按日 / 周窗口限制请求数）。同一品牌的额度规则也可能随模型选择变化（如选用特定模型时额度更多），且存在入口调整的先例（如 Gemini CLI 与 Gemini Code Assist 已于 2026 年中停止为 Google AI 订阅档位服务），购买前应核对当前条款。
+
 ## CLI / Terminal Coding Agent
 
 终端 Agent 直接工作在仓库和工具链旁，适合开发者、服务器环境、自动化脚本和可组合工作流。它们大致可分为“模型厂商主导”与“多模型 / 模型无关”两类。
@@ -354,25 +356,26 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 
 ### 模型厂商代表方案
 
-| 方案                                 | 提供方      | 类型与特点                                                                  | 官方信息                                                                 |
-| ------------------------------------ | ----------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| GLM Coding Plan                      | 智谱        | 官方 Coding Agent 订阅，使用 GLM 系列；新 Token Plan 支持 GLM-5.3，无需抢购 | [快速开始](https://docs.bigmodel.cn/cn/coding-plan/quick-start)          |
-| 百炼 Coding Plan                     | 阿里云      | 多模型、专用 Key 与 Endpoint；Coding Plan 限量放量，Token Plan 开放购买     | [官方文档](https://help.aliyun.com/zh/model-studio/coding-plan)          |
-| 腾讯云 Token Plan                    | 腾讯云      | Coding Plan 已下线，仅 Token Plan；混元与 GLM、Kimi、MiniMax 接入           | [产品页](https://cloud.tencent.cn/act/pro/tokenplan)                     |
-| 火山方舟 Coding Plan / Agent Plan    | 火山引擎    | 已解除限购，开放购买；模型池覆盖 GLM-5.3、DeepSeek-V4、Kimi-K3 等           | [官方文档](https://www.volcengine.com/docs/82379/2165245)                |
-| 百度千帆 Coding Plan / Token Plan    | 百度智能云  | Coding Plan 已下线；Token Plan 个人版上线，接入 GLM、DeepSeek、Kimi 等      | [千帆平台](https://cloud.baidu.com/product/codingplan.html)              |
-| Kimi Code                            | 月之暗面    | CLI 与 VS Code，可接会员 API Key；Kimi-K3 发布后会员暂停购买                | [官方文档](https://www.kimi.com/code/docs/en/)                           |
-| MiniMax Token Plan                   | MiniMax     | Plus / Max / Ultra 三档公开，不限购，全模态额度共享；MiniMax-M3 多模态      | [订阅页](https://platform.minimax.io/subscribe/coding-plan)              |
-| 小米 MiMo Token Plan                 | 小米        | Lite / Standard / Pro / Max 四档，无 5 小时硬限                             | [小米 MiMo](https://mimo.xiaomi.com/)                                    |
-| Qwen / QwenCloud 相关 Plan           | Qwen / 阿里 | Qwen 生态的 Coding / Token 类订阅；名称与套餐随地区和阶段变化               | [Qwen Code](https://qwenlm.github.io/qwen-code-docs/)                    |
-| DeepSeek API                         | DeepSeek    | 按量 API；V4-Pro、V4-Flash 正式版上线，可配官方 Harness                     | [API 文档](https://api-docs.deepseek.com/)                               |
-| OpenAI 官方 API                      | OpenAI      | 通用按量 API，与产品席位和 Chat 会员分开                                    | [OpenAI API](https://developers.openai.com/api/)                         |
-| Anthropic 官方 API                   | Anthropic   | 通用按量 API，与产品席位和 Chat 会员分开                                    | [Claude API](https://docs.anthropic.com/)                                |
-| xAI 官方 API                         | xAI         | 通用按量 API，与产品席位和 Chat 会员分开                                    | [xAI API](https://docs.x.ai/)                                            |
-| Codex 会员额度                       | OpenAI      | ChatGPT 订阅附带 Coding Agent 额度；五小时窗口取消，仅周限额；需外币支付    | [定价页](https://openai.com/chatgpt/pricing/)                            |
-| Claude Code 会员额度                 | Anthropic   | Pro / Max 订阅附带 Coding Agent 额度，滚动窗口；需境外支付与网络            | [定价页](https://www.anthropic.com/pricing)                              |
-| OpenCode Zen / OpenCode Go           | OpenCode    | 精选模型网关与订阅套餐，Go 档聚合 Kimi-K3、GLM-5.3 等最新模型               | [Zen 文档](https://opencode.ai/docs/zen/)                                |
-| Ollama Cloud Plan                    | Ollama      | 云端开源模型订阅，按云资源用量计量；即将支持 Kimi-K3；需外币支付            | [Ollama Cloud](https://ollama.com/cloud)                                 |
+| 方案                                 | 提供方      | 类型与特点                                                                                                 | 官方信息                                                                 |
+| ------------------------------------ | ----------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| GLM Coding Plan                      | 智谱        | 官方 Coding Agent 订阅，Lite / Pro 档与新 Token Plan（支持 GLM-5.3）；算力紧张时 429 频繁                  | [快速开始](https://docs.bigmodel.cn/cn/coding-plan/quick-start)          |
+| 百炼 Coding Plan                     | 阿里云      | 多模型、专用 Key 与 Endpoint；Lite 基础套餐已下线，Token Plan 开放购买                                     | [官方文档](https://help.aliyun.com/zh/model-studio/coding-plan)          |
+| 腾讯云 Token Plan                    | 腾讯云      | Coding Plan 已下线，仅 Token Plan；混元与 GLM、Kimi、MiniMax 接入                                          | [产品页](https://cloud.tencent.cn/act/pro/tokenplan)                     |
+| 火山方舟 Coding Plan / Agent Plan    | 火山引擎    | 已解除限购，开放购买，Lite 档每日限量释放；模型池覆盖 GLM-5.3、DeepSeek-V4、Kimi-K3 等                     | [官方文档](https://www.volcengine.com/docs/82379/2165245)                |
+| 百度千帆 Coding Plan / Token Plan    | 百度智能云  | Coding Plan 已下线；Token Plan 个人版上线，接入 GLM、DeepSeek、Kimi 等                                     | [千帆平台](https://cloud.baidu.com/product/codingplan.html)              |
+| Kimi Code                            | 月之暗面    | CLI 与 VS Code，Andante / Allegretto 等档位，支持图像输入；Kimi-K3 发布后会员暂停购买，算力紧张时 429 频繁 | [官方文档](https://www.kimi.com/code/docs/en/)                           |
+| MiniMax Token Plan                   | MiniMax     | Plus / Max / Ultra 三档公开，不限购，全模态额度共享；MiniMax-M3 多模态                                     | [订阅页](https://platform.minimax.io/subscribe/coding-plan)              |
+| 小米 MiMo Token Plan                 | 小米        | Lite / Standard / Pro / Max 四档，无 5 小时硬限，按月度 Credits 总量计量                                   | [小米 MiMo](https://mimo.xiaomi.com/)                                    |
+| Qwen / QwenCloud 相关 Plan           | Qwen / 阿里 | Qwen 生态的 Coding / Token 类订阅；名称与套餐随地区和阶段变化                                              | [Qwen Code](https://qwenlm.github.io/qwen-code-docs/)                    |
+| DeepSeek API                         | DeepSeek    | 按量 API；V4-Pro、V4-Flash 正式版上线，可配官方 Harness；Flash 吞吐稳定、1M 上下文、暂不支持多模态         | [API 文档](https://api-docs.deepseek.com/)                               |
+| OpenAI 官方 API                      | OpenAI      | 通用按量 API，与产品席位和 Chat 会员分开                                                                   | [OpenAI API](https://developers.openai.com/api/)                         |
+| Anthropic 官方 API                   | Anthropic   | 通用按量 API，与产品席位和 Chat 会员分开                                                                   | [Claude API](https://docs.anthropic.com/)                                |
+| xAI 官方 API                         | xAI         | 通用按量 API，与产品席位和 Chat 会员分开                                                                   | [xAI API](https://docs.x.ai/)                                            |
+| Codex 会员额度                       | OpenAI      | ChatGPT 订阅附带 Coding Agent 额度，按 5 小时消息数与周限额管理；需外币支付                                | [定价页](https://openai.com/chatgpt/pricing/)                            |
+| Claude Code 会员额度                 | Anthropic   | Pro / Max 订阅附带 Coding Agent 额度，按 5 小时与周窗口管理，近期有临时加量；需境外支付与网络              | [定价页](https://www.anthropic.com/pricing)                              |
+| OpenCode Zen / OpenCode Go           | OpenCode    | 精选模型网关与订阅套餐，Go 档聚合 Kimi-K3、GLM-5.3、MiMo、DeepSeek-V4 等最新模型                           | [Zen 文档](https://opencode.ai/docs/zen/)                                |
+| Ollama Cloud Plan                    | Ollama      | 云端开源模型订阅，Free 档与付费档，按云资源用量计量；即将支持 Kimi-K3；需外币支付                          | [Ollama Cloud](https://ollama.com/cloud)                                 |
+| NVIDIA NIM 免费档                    | NVIDIA      | 免费调用 100+ 开源模型（DeepSeek、GLM、Kimi、MiniMax 等），限流低、无 SLA，适合原型验证                    | [build.nvidia.com](https://build.nvidia.com/)                            |
 
 ### 兼容性不是只有“能填 Base URL”
 
@@ -406,18 +409,18 @@ API Router、Inference Provider 和云模型市场提供统一接口、模型目
 
 ### 全球多模型与推理平台
 
-| 平台                                                                                                               | 覆盖与特点                                                | 更接近哪一层                 |
-| ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- | ---------------------------- |
-| [OpenRouter](https://openrouter.ai/)                                                                               | 多模型统一 API、供应商路由、回退和统一账单                | Router / Marketplace         |
-| [Together AI](https://docs.together.ai/docs/inference/overview)                                                    | 大量开放模型，Serverless 与 Dedicated Endpoint            | Inference Provider           |
-| [Fireworks AI](https://fireworks.ai/inference)                                                                     | 优化推理、Serverless / Dedicated、OpenAI / Anthropic 兼容 | Inference Provider           |
-| [GroqCloud](https://console.groq.com/docs/overview)                                                                | 低延迟推理平台与兼容 API                                  | Inference Provider           |
-| [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers/main/en/index)                  | 一个 HF Token 接入多家推理提供商                          | Router / Provider Aggregator |
-| [Replicate](https://replicate.com/docs/topics/models/run-a-model/)                                                 | 通过 Web 或 API 运行文本、图像、音视频等模型              | Model Hosting / API          |
-| [Baseten](https://docs.baseten.co/)                                                                                | 专用模型部署、推理与生产基础设施                          | Model Serving                |
-| [AWS Bedrock](https://docs.aws.amazon.com/bedrock/)                                                                | 多厂商基础模型、AWS 原生安全与企业服务                    | Hyperscaler Model Platform   |
-| [Google Vertex AI Model Garden](https://cloud.google.com/vertex-ai/generative-ai/docs/model-garden/explore-models) | Google 与第三方模型目录、部署和治理                       | Hyperscaler Model Platform   |
-| [Microsoft Foundry Models](https://azure.microsoft.com/en-us/products/ai-foundry/models/)                          | 多厂商模型目录、API、部署与企业治理                       | Hyperscaler Model Platform   |
+| 平台                                                                                                               | 覆盖与特点                                                                          | 更接近哪一层                 |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | ---------------------------- |
+| [OpenRouter](https://openrouter.ai/)                                                                               | 多模型统一 API、供应商路由、回退和统一账单；部分模型有每日限免额度                  | Router / Marketplace         |
+| [Together AI](https://docs.together.ai/docs/inference/overview)                                                    | 大量开放模型，Serverless 与 Dedicated Endpoint                                      | Inference Provider           |
+| [Fireworks AI](https://fireworks.ai/inference)                                                                     | 优化推理、Serverless / Dedicated、OpenAI / Anthropic 兼容；另有面向特定模型的订阅档 | Inference Provider           |
+| [GroqCloud](https://console.groq.com/docs/overview)                                                                | 低延迟推理平台与兼容 API                                                            | Inference Provider           |
+| [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers/main/en/index)                  | 一个 HF Token 接入多家推理提供商                                                    | Router / Provider Aggregator |
+| [Replicate](https://replicate.com/docs/topics/models/run-a-model/)                                                 | 通过 Web 或 API 运行文本、图像、音视频等模型                                        | Model Hosting / API          |
+| [Baseten](https://docs.baseten.co/)                                                                                | 专用模型部署、推理与生产基础设施                                                    | Model Serving                |
+| [AWS Bedrock](https://docs.aws.amazon.com/bedrock/)                                                                | 多厂商基础模型、AWS 原生安全与企业服务                                              | Hyperscaler Model Platform   |
+| [Google Vertex AI Model Garden](https://cloud.google.com/vertex-ai/generative-ai/docs/model-garden/explore-models) | Google 与第三方模型目录、部署和治理                                                 | Hyperscaler Model Platform   |
+| [Microsoft Foundry Models](https://azure.microsoft.com/en-us/products/ai-foundry/models/)                          | 多厂商模型目录、API、部署与企业治理                                                 | Hyperscaler Model Platform   |
 
 ### 国内模型平台与聚合服务
 
