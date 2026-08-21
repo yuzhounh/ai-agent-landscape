@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Changed
+
+- Refreshed the plan table and domestic platform table from the 2026-08-16 third-party comparison: updated purchase availability and model coverage for Zhipu, Model Studio, Tencent Cloud, Ark, Qianfan, Kimi, MiniMax, DeepSeek, Codex, Claude Code, OpenCode, and Ollama; added Huawei Cloud, JD Cloud, iFlytek Spark, China Unicom Cloud, China Mobile Cloud, StepFun, SenseTime SenseNova, and Moore Threads to domestic platforms.
+
 ## [0.2.0] - 2026-08-19
 
 ### Added
