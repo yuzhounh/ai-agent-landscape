@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
+- Added Coding Plan Index to the third-party Coding Plan comparison references.
 - Added NVIDIA NIM free tier (100+ open models, low rate limit, no SLA) to the vendor plan table.
 - Added 超算互联网 SCNet (Token Plan on sale, Coding Plan sold out) and TaoToken (pay-as-you-go channel with a limited GLM-5.2 Coding Plan) to domestic platforms.
 

@@ -398,6 +398,7 @@ Browser Use 通常通过 DOM、无障碍树、截图或浏览器扩展操作网�
 
 | 工具                                                                          | 内容                                             | 使用提示                                           |
 | ----------------------------------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------- |
+| [Coding Plan Index](https://cp.pingfan.me/)                                   | AI 编程套餐价格、Agent 能力与估算用量对比        | 价格以官方来源为准，能力与用量估计请交叉核对       |
 | [AI Coding Plan 平台评测与对比](https://vibecoding.dreamfree.space/)          | Coding Plan 平台横评、模型基准与选型文章         | 第三方社区工具，数据和结论请以官方来源交叉核对     |
 | [awesome-coding-plan](https://github.com/mahonzhan/awesome-coding-plan)       | 各厂家 Coding Plan 实际价值对比                  | 第三方社区整理，套餐与价格请以官方页面核对         |
 
