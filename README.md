@@ -540,6 +540,10 @@ Chat 产品、基础模型 / API 和 Agent 产品是三个不同层次。Chat �
 - 对本地文件、浏览器登录态、代码仓库和第三方账号授予权限前，请自行完成风险评估并保留备份。
 - 若官方页面与本仓库发生冲突，以官方最新说明为准。
 
+## 相关项目
+
+- [ai-resource-hub](https://github.com/yuzhounh/ai-resource-hub)：将 Agent 生态地图与 AI 工具、API 控制台、科研资源等整合为统一入口。
+
 ## License
 
 [MIT](LICENSE)
