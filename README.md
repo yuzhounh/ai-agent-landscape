@@ -1,15 +1,20 @@
 <p align="center">
-  <img src="assets/icon.svg" alt="AI Agent Landscape logo" width="128">
+  <img src="assets/icon.svg" width="112" alt="AI Agent Landscape logo">
 </p>
 
 <h1 align="center">AI Agent Landscape</h1>
 
-<p align="center"><strong>AI Agent 产品、运行形态、模型与用量方案的中文生态地图</strong></p>
+<p align="center"><strong>AI Agent 产品、运行形态、模型与用量方案的中文生态地图。</strong></p>
 
 <p align="center">
-  <a href="https://github.com/yuzhounh/ai-agent-landscape/releases/tag/v0.2.0"><img src="https://img.shields.io/badge/version-v0.2.0-blue.svg" alt="Version v0.2.0" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" /></a>
-  <a href="#信息时效与声明"><img src="https://img.shields.io/badge/last_verified-2026--08--21-2ea44f.svg" alt="Last verified 2026-08-21" /></a>
+  <a href="https://github.com/yuzhounh/ai-agent-landscape/releases/latest"><img src="https://img.shields.io/github/v/release/yuzhounh/ai-agent-landscape?style=flat&amp;color=0969da&amp;label=Release" alt="Latest stable release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-f59e0b?style=flat" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/Reference-Chinese-8875de?style=flat" alt="Reference: Chinese">
+  <a href="#信息时效与声明"><img src="https://img.shields.io/badge/Verified-2026--08--21-2da44e?style=flat" alt="Verified: 2026-08-21"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/yuzhounh/ai-agent-landscape/releases/latest">发布版本</a> · <a href="LICENSE">开源协议</a>
 </p>
 
 AI Agent 已经不再只是聊天框或代码补全插件。一个完整的 Agent 产品，通常由模型、上下文工程、工具、执行环境、权限系统和交付界面共同组成，可以理解需求、拆解任务、调用工具、修改文件、运行代码，并在一定程度上持续工作直至交付结果。
@@ -544,6 +549,6 @@ Chat 产品、基础模型 / API 和 Agent 产品是三个不同层次。Chat �
 
 - [ai-resource-hub](https://github.com/yuzhounh/ai-resource-hub)：将 Agent 生态地图与 AI 工具、API 控制台、科研资源等整合为统一入口。
 
-## License
+## 开源协议
 
 [MIT](LICENSE)
